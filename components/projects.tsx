@@ -115,6 +115,36 @@ const projects: Project[] = [
   },
   {
     id: 4,
+    title: "Pulse of People - Voter Sentiment Dashboard",
+    description: "Advanced voter sentiment analysis platform, providing real-time insights into public opinion and electoral preferences through interactive data visualizations.",
+    detailedDescription: "Pulse of People is a sophisticated voter sentiment analysis dashboard developed by BETTROI that tracks and visualizes public opinion related to voting behaviors and electoral preferences. The platform leverages advanced data visualization techniques to provide political analysts, campaign strategists, and researchers with real-time insights into voter sentiment, helping them understand the pulse of democratic participation.",
+    category: "Business",
+    tags: ["Data Analytics", "Political Analysis", "Voter Sentiment"],
+    aiFeatures: [
+      "AI-powered sentiment analysis of voter opinions",
+      "Real-time data processing and visualization",
+      "Predictive analytics for electoral trends",
+      "Automated sentiment classification and scoring",
+      "Pattern recognition in voter behavior",
+      "Intelligent trend detection and alerting",
+    ],
+    keyFeatures: [
+      "Interactive data visualization dashboard",
+      "Real-time voter sentiment tracking",
+      "Comprehensive charting and graphing tools",
+      "Political opinion trend analysis",
+      "Electoral preference monitoring",
+      "Customizable data views and filters",
+      "Export and reporting capabilities",
+      "Responsive web interface for all devices",
+    ],
+    technologies: ["Data Visualization", "Web Dashboard", "Analytics Platform", "Chart Libraries"],
+    websiteUrl: "https://tvk.pulseofpeople.com",
+    date: "2025",
+    featured: true,
+  },
+  {
+    id: 5,
     title: "PulseOfProject - Real-Time Project Tracking",
     description: "AI-powered real-time project management platform that provides instant visibility into project status, team performance, and milestone tracking.",
     detailedDescription: "PulseOfProject is a next-generation project management platform designed to give teams real-time visibility into their projects. Powered by advanced AI and analytics, it transforms how organizations track progress, manage resources, and deliver projects on time.",
@@ -144,7 +174,7 @@ const projects: Project[] = [
     featured: false,
   },
   {
-    id: 5,
+    id: 6,
     title: "Proposify AI - Intelligent Proposal Management",
     description: "AI-powered proposal management platform that automates content generation, pricing optimization, and client research for faster proposal creation.",
     detailedDescription: "Proposify AI is a modern proposal management platform that leverages artificial intelligence to streamline the entire proposal creation workflow. The platform helps sales teams create professional, data-driven proposals with intelligent automation and smart recommendations.",
@@ -174,7 +204,7 @@ const projects: Project[] = [
     featured: true,
   },
   {
-    id: 6,
+    id: 7,
     title: "AI Surgeon Pilot - Intelligent Surgical Assistant",
     description: "Advanced AI-powered surgical assistance platform that provides real-time guidance, predictive analytics, and decision support for enhanced surgical outcomes.",
     detailedDescription: "AI Surgeon Pilot is a cutting-edge medical AI platform designed to assist surgeons with intelligent decision support, real-time guidance, and predictive analytics. The platform enhances surgical precision, improves patient safety, and optimizes surgical workflows through advanced artificial intelligence.",
@@ -204,7 +234,7 @@ const projects: Project[] = [
     featured: false,
   },
   {
-    id: 7,
+    id: 8,
     title: "StyleMy.Hair - Virtual Hairstyle Try-On",
     description: "AI-powered virtual hairstyle platform that lets users preview different hairstyles digitally before making styling decisions.",
     detailedDescription: "StyleMy.Hair is an innovative virtual try-on platform powered by Google's Generative AI that revolutionizes the hair styling experience. The platform enables users to experiment with different hairstyles digitally, reducing uncertainty and helping them make confident styling choices before visiting a salon.",
@@ -234,7 +264,7 @@ const projects: Project[] = [
     featured: false,
   },
   {
-    id: 8,
+    id: 9,
     title: "PreWed AI - AI-Powered Pre-Wedding Photography",
     description: "Revolutionary AI platform that creates stunning pre-wedding photos and helps couples visualize their perfect wedding look without expensive photoshoots.",
     detailedDescription: "PreWed AI transforms the pre-wedding photography experience by leveraging advanced AI image generation technology. Couples can create beautiful, personalized pre-wedding photos in any location, style, or theme they imagine - all without leaving home or hiring expensive photographers.",
@@ -264,7 +294,7 @@ const projects: Project[] = [
     featured: false,
   },
   {
-    id: 9,
+    id: 10,
     title: "AI-Shu - Photorealistic AI Tutor",
     description: "Intelligent AI-powered tutoring platform featuring photorealistic AI tutors that provide personalized education across multiple subjects with real-time adaptive learning.",
     detailedDescription: "AI-Shu is a revolutionary educational platform featuring photorealistic AI tutors that deliver personalized instruction across multiple subjects. Built on the proven Three-C Model (Curiosity → Clarity → Confidence), the platform adapts teaching approaches in real-time based on emotional recognition and learning styles, supporting students preparing for IB, A-Level, AP, and IGCSE examinations.",
@@ -294,7 +324,7 @@ const projects: Project[] = [
     featured: true,
   },
   {
-    id: 10,
+    id: 11,
     title: "Headz - AI Virtual Hair Try-On",
     description: "Advanced virtual hair try-on application with AI-powered facial detection that lets users preview professional hairstyles and book appointments with hair professionals.",
     detailedDescription: "Headz is a cutting-edge virtual hair try-on web application that combines AI-powered facial detection with real-time hairstyle overlay technology. Users can upload their photos, browse nine professional hairstyle options, save favorites, and seamlessly book appointments with hair professionals—all within an intuitive platform.",
@@ -323,7 +353,7 @@ const projects: Project[] = [
     featured: false,
   },
   {
-    id: 11,
+    id: 12,
     title: "Hospiview - Hospital Management System",
     description: "Comprehensive hospital management platform with real-time bed tracking, patient admissions monitoring, and role-based access for efficient healthcare operations.",
     detailedDescription: "Hospiview is a modern hospital management system designed to streamline healthcare facility operations. With real-time dashboards, bed capacity tracking, and comprehensive patient management features, it provides healthcare administrators with complete visibility and control over hospital resources.",
@@ -346,7 +376,7 @@ const projects: Project[] = [
     featured: false,
   },
   {
-    id: 12,
+    id: 13,
     title: "Neuro360 - EEG Report Management Platform",
     description: "Comprehensive SaaS platform for managing EEG reports, clinic onboarding, and neurological test data with subscription-based monetization.",
     detailedDescription: "Neuro360 is a specialized healthcare SaaS platform designed for managing electroencephalogram (EEG) reports and neurological test data. The platform features dual-interface architecture with a super admin dashboard and clinic-specific portals, enabling seamless management of patient reports, subscription tracking, and clinic operations.",
@@ -368,7 +398,7 @@ const projects: Project[] = [
     featured: false,
   },
   {
-    id: 13,
+    id: 14,
     title: "Voice Agent App - AI Voice Conversations",
     description: "Mobile application enabling natural voice-based conversations with AI agents, featuring real-time speech recognition and text-to-speech synthesis.",
     detailedDescription: "Voice Agent App is a React Native mobile application that provides seamless voice-based interaction with ElevenLabs conversational AI agents. The app captures spoken input, processes it through conversational AI, and delivers natural-sounding voice responses, enabling hands-free AI communication across iOS and Android devices.",
@@ -397,7 +427,7 @@ const projects: Project[] = [
     featured: false,
   },
   {
-    id: 14,
+    id: 15,
     title: "ORMA - AI Studio Platform",
     description: "Comprehensive AI Studio application for running and deploying AI-powered apps with Google Gemini integration and cloud infrastructure.",
     detailedDescription: "ORMA is an AI Studio platform that facilitates rapid development and deployment of AI-powered applications. Built with modern frameworks and integrated with Google Gemini AI, it provides a pre-configured template combining frontend frameworks, cloud infrastructure, and AI capabilities for developers.",
@@ -427,7 +457,7 @@ const projects: Project[] = [
     featured: false,
   },
   {
-    id: 15,
+    id: 16,
     title: "HealthPlus - Clinic Management App",
     description: "Mobile clinic management application streamlining appointment scheduling and patient-doctor interactions with role-based access control.",
     detailedDescription: "HealthPlus is a React Native mobile application designed to streamline healthcare facility operations. The app automates appointment management, enables secure role-based access for doctors and patients, and centralizes patient-doctor scheduling through an intuitive mobile interface powered by Firebase.",
@@ -449,7 +479,7 @@ const projects: Project[] = [
     featured: false,
   },
   {
-    id: 16,
+    id: 17,
     title: "Clinivoice - AI Voice Agent Platform",
     description: "Enterprise SaaS platform for managing organizations and AI voice agents with native Hindi/Hinglish support for healthcare applications.",
     detailedDescription: "Clinivoice (DrM Hope SaaS Platform) is a comprehensive enterprise management system designed for healthcare organizations. The platform features multi-tenant architecture with Hindi/Hinglish AI voice agent integration, call logging, analytics, and enterprise-grade security with data isolation.",
@@ -478,7 +508,7 @@ const projects: Project[] = [
     featured: false,
   },
   {
-    id: 17,
+    id: 18,
     title: "NABH - Healthcare Quality Management",
     description: "Comprehensive platform for managing medical diagnoses, complications, and investigations with role-based access for healthcare quality assurance.",
     detailedDescription: "NABH Platform is a healthcare management system designed to streamline medical data organization in hospital settings. It provides structured organization of diagnoses, complications, and related investigations with proper access controls for quality managers, department heads, and administrators.",
@@ -500,7 +530,7 @@ const projects: Project[] = [
     featured: false,
   },
   {
-    id: 18,
+    id: 19,
     title: "Limitless Brain Wellness (LBW)",
     description: "Comprehensive brain wellness platform providing science-backed personalized programs for ADHD support, memory enhancement, mood regulation, and stress management.",
     detailedDescription: "Limitless Brain Wellness is a digital health platform focused on brain health optimization with the philosophy 'You're not broken. You're becoming limitless.' The platform offers personalized onboarding pathways, evidence-based assessments, daily personalized content, and progress tracking with brain fitness scoring.",

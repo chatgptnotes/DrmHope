@@ -7,11 +7,11 @@ export function ImagineCards() {
   const cards = [
     {
       icon: Code,
-      title: "Cloud Solutions",
-      subtitle: "Enterprise cloud architecture",
+      title: "AI Solutions",
+      subtitle: "Enterprise AI Integration",
       items: [
-        "Cloud Migration Strategy",
-        "AWS, Azure & GCP Solutions",
+        "web solutions using AI",
+        "AI integration in your existing project",
         "Cloud-Native Development",
         "Scalable Infrastructure"
       ],
