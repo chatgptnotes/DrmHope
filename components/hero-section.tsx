@@ -112,7 +112,7 @@ export function HeroSection() {
     {
       title: "AI & Machine Learning",
       description: "Intelligent automation and predictive analytics powering business growth.",
-      image: "/placeholder.jpg",
+      image: "/images/pexels-markusspiske-225769.jpg",
       color: "#FD5F07"
     },
   ]
