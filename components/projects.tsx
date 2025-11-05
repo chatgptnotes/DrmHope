@@ -50,6 +50,7 @@ const projects: Project[] = [
     ],
     technologies: ["React", "Node.js", "AI/ML", "Cloud Infrastructure"],
     websiteUrl: "https://adamrit.com",
+    image: "/adamrit-screenshot.gif",
     date: "2025",
     featured: true,
   },
@@ -80,6 +81,7 @@ const projects: Project[] = [
     ],
     technologies: ["NFC Technology", "AI/ML", "Cloud Infrastructure", "Mobile-First Design"],
     websiteUrl: "https://linkist.2men.co",
+    image: "/linkist-screenshot.gif",
     date: "2025",
     featured: true,
   },
@@ -170,6 +172,7 @@ const projects: Project[] = [
     ],
     technologies: ["Real-Time Analytics", "AI/ML", "Cloud Platform", "Mobile-First"],
     websiteUrl: "https://pulseofproject.com",
+    image: "/pulseofproject.gif",
     date: "2025",
     featured: false,
   },
@@ -200,6 +203,7 @@ const projects: Project[] = [
     ],
     technologies: ["Next.js", "TypeScript", "AI/ML", "Cloud Platform"],
     websiteUrl: "https://www.proposifyai.com",
+    image: "/Raftaar.gif",
     date: "2025",
     featured: true,
   },
@@ -290,6 +294,7 @@ const projects: Project[] = [
     ],
     technologies: ["AI Image Generation", "Deep Learning", "Computer Vision", "Cloud Processing"],
     websiteUrl: "https://prewedai.com",
+    image: "/prewedai.gif",
     date: "2025",
     featured: false,
   },
@@ -609,9 +614,19 @@ export function Projects() {
           {filteredProjects.map((project) => (
             <Card
               key={project.id}
-              className="flex flex-col border-red-100 dark:border-red-900 hover:shadow-lg transition-shadow"
+              className="flex flex-col border-red-100 dark:border-red-900 hover:shadow-lg transition-shadow relative overflow-hidden"
+              style={{
+                backgroundImage: project.image ? `url(${project.image})` : undefined,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat'
+              }}
             >
-              <CardHeader>
+              {/* Overlay for better text readability when background image is present */}
+              {project.image && (
+                <div className="absolute inset-0 bg-gradient-to-b from-white/95 via-white/85 to-white/95 dark:from-gray-900/5 dark:via-gray-900/85 dark:to-gray-900/95" />
+              )}
+              <CardHeader className="relative z-10">
                 <div className="flex items-start justify-between mb-2">
                   <Badge className="bg-red-100 dark:bg-red-900 text-red-700 dark:text-red-300 hover:bg-red-200 dark:hover:bg-red-800">
                     {project.category}
@@ -625,7 +640,7 @@ export function Projects() {
                 <CardTitle className="text-xl text-red-700 dark:text-red-300">{project.title}</CardTitle>
                 <CardDescription className="text-gray-700 dark:text-gray-300">{project.description}</CardDescription>
               </CardHeader>
-              <CardContent className="flex-1">
+              <CardContent className="flex-1 relative z-10">
                 <div className="space-y-3">
                   <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
                     <Calendar className="h-4 w-4" />
@@ -647,7 +662,7 @@ export function Projects() {
                   </div>
                 </div>
               </CardContent>
-              <CardFooter className="flex gap-2">
+              <CardFooter className="flex gap-2 relative z-10">
                 <Button
                   size="sm"
                   variant="outline"
