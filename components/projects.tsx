@@ -583,7 +583,7 @@ export function Projects() {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center mb-12">
-          <h1 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-5xl text-red-700 dark:text-red-300">
+          <h1 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-5xl text-red-700 dark:text-white">
             Our Projects
           </h1>
           <p className="max-w-[85%] leading-normal text-gray-700 dark:text-gray-300 sm:text-lg sm:leading-7">
@@ -624,11 +624,11 @@ export function Projects() {
             >
               {/* Overlay for better text readability when background image is present */}
               {project.image && (
-                <div className="absolute inset-0 bg-gradient-to-b from-white/95 via-white/85 to-white/95 dark:from-gray-900/5 dark:via-gray-900/85 dark:to-gray-900/95" />
+                <div className="absolute inset-0 bg-gradient-to-b from-white/95 via-white/85 to-white/95 dark:from-gray-900/95 dark:via-gray-900/85 dark:to-gray-900/95" />
               )}
               <CardHeader className="relative z-10">
                 <div className="flex items-start justify-between mb-2">
-                  <Badge className="bg-red-100 dark:bg-red-900 text-red-700 dark:text-red-300 hover:bg-red-200 dark:hover:bg-red-800">
+                  <Badge className="bg-red-100 dark:bg-red-900 text-red-700 dark:text-white hover:bg-red-200 dark:hover:bg-red-800">
                     {project.category}
                   </Badge>
                   {project.featured && (
@@ -637,7 +637,7 @@ export function Projects() {
                     </Badge>
                   )}
                 </div>
-                <CardTitle className="text-xl text-red-700 dark:text-red-300">{project.title}</CardTitle>
+                <CardTitle className="text-xl text-red-700 dark:text-white">{project.title}</CardTitle>
                 <CardDescription className="text-gray-700 dark:text-gray-300">{project.description}</CardDescription>
               </CardHeader>
               <CardContent className="flex-1 relative z-10">
@@ -690,7 +690,7 @@ export function Projects() {
 
         {/* CTA Section */}
         <div className="mt-16 text-center bg-white dark:bg-gray-900 p-8 rounded-lg shadow-md border border-red-100 dark:border-red-900">
-          <h3 className="text-2xl font-bold text-red-700 dark:text-red-300 mb-4">
+          <h3 className="text-2xl font-bold text-red-700 dark:text-white mb-4">
             Have a Project in Mind?
           </h3>
           <p className="text-gray-700 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
@@ -710,11 +710,11 @@ export function Projects() {
               <DialogHeader>
                 <div className="flex items-start justify-between mb-4">
                   <div className="flex-1">
-                    <DialogTitle className="text-2xl md:text-3xl text-red-700 dark:text-red-300 mb-2">
+                    <DialogTitle className="text-2xl md:text-3xl text-red-700 dark:text-white mb-2">
                       {selectedProject.title}
                     </DialogTitle>
                     <div className="flex flex-wrap gap-2 mb-4">
-                      <Badge className="bg-red-100 dark:bg-red-900 text-red-700 dark:text-red-300">
+                      <Badge className="bg-red-100 dark:bg-red-900 text-red-700 dark:text-white">
                         {selectedProject.category}
                       </Badge>
                       {selectedProject.featured && (
@@ -739,8 +739,8 @@ export function Projects() {
                 {selectedProject.aiFeatures && selectedProject.aiFeatures.length > 0 && (
                   <div>
                     <div className="flex items-center gap-2 mb-3">
-                      <Sparkles className="h-5 w-5 text-red-600 dark:text-red-400" />
-                      <h3 className="text-xl font-semibold text-red-700 dark:text-red-300">AI-Powered Features</h3>
+                      <Sparkles className="h-5 w-5 text-red-600 dark:text-white" />
+                      <h3 className="text-xl font-semibold text-red-700 dark:text-white">AI-Powered Features</h3>
                     </div>
                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
                       {selectedProject.aiFeatures.map((feature, index) => (
@@ -748,7 +748,7 @@ export function Projects() {
                           key={index}
                           className="flex items-start gap-2 text-gray-700 dark:text-gray-300 bg-red-50 dark:bg-red-950/30 p-3 rounded-md"
                         >
-                          <Sparkles className="h-4 w-4 mt-0.5 text-red-600 dark:text-red-400 flex-shrink-0" />
+                          <Sparkles className="h-4 w-4 mt-0.5 text-red-600 dark:text-white flex-shrink-0" />
                           <span>{feature}</span>
                         </li>
                       ))}
@@ -759,14 +759,14 @@ export function Projects() {
                 {/* Key Features */}
                 {selectedProject.keyFeatures && selectedProject.keyFeatures.length > 0 && (
                   <div>
-                    <h3 className="text-xl font-semibold text-red-700 dark:text-red-300 mb-3">Key Features</h3>
+                    <h3 className="text-xl font-semibold text-red-700 dark:text-white mb-3">Key Features</h3>
                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
                       {selectedProject.keyFeatures.map((feature, index) => (
                         <li
                           key={index}
                           className="flex items-start gap-2 text-gray-700 dark:text-gray-300"
                         >
-                          <span className="text-red-600 dark:text-red-400 mt-1">•</span>
+                          <span className="text-red-600 dark:text-white mt-1">•</span>
                           <span>{feature}</span>
                         </li>
                       ))}
@@ -777,7 +777,7 @@ export function Projects() {
                 {/* Technologies */}
                 {selectedProject.technologies && selectedProject.technologies.length > 0 && (
                   <div>
-                    <h3 className="text-xl font-semibold text-red-700 dark:text-red-300 mb-3">Technologies Used</h3>
+                    <h3 className="text-xl font-semibold text-red-700 dark:text-white mb-3">Technologies Used</h3>
                     <div className="flex flex-wrap gap-2">
                       {selectedProject.technologies.map((tech, index) => (
                         <Badge
@@ -794,12 +794,12 @@ export function Projects() {
 
                 {/* Tags */}
                 <div>
-                  <h3 className="text-xl font-semibold text-red-700 dark:text-red-300 mb-3">Tags</h3>
+                  <h3 className="text-xl font-semibold text-red-700 dark:text-white mb-3">Tags</h3>
                   <div className="flex flex-wrap gap-2">
                     {selectedProject.tags.map((tag, index) => (
                       <Badge
                         key={index}
-                        className="bg-red-100 dark:bg-red-900 text-red-700 dark:text-red-300"
+                        className="bg-red-100 dark:bg-red-900 text-red-700 dark:text-white"
                       >
                         {tag}
                       </Badge>

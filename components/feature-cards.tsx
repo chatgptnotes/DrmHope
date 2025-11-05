@@ -33,7 +33,7 @@ export function FeatureCards() {
             return (
               <div
                 key={index}
-                className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 p-8 transition-all duration-300 hover:shadow-2xl hover:scale-105"
+                className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-gray-50 dark:from-gray-900 to-gray-100 dark:to-gray-800 p-8 transition-all duration-300 hover:shadow-2xl hover:scale-105"
               >
                 {/* Background Gradient on Hover */}
                 <div

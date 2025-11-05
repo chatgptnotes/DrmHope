@@ -4,7 +4,7 @@ import { Projects } from "@/components/projects"
 
 export default function ProjectsPage() {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col bg-white dark:bg-gray-950">
       <Navbar />
       <main className="flex-1">
         <Projects />

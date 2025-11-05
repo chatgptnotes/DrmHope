@@ -47,7 +47,7 @@ export function GetStartedModal({ isOpen, onClose }: { isOpen: boolean; onClose:
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="sm:max-w-[500px]">
         <DialogHeader>
-          <DialogTitle className="text-2xl font-bold text-red-700 dark:text-red-300">
+          <DialogTitle className="text-2xl font-bold text-red-700 dark:text-white">
             Get Started with DRM HOPE
           </DialogTitle>
           <DialogDescription className="text-gray-700 dark:text-gray-300">

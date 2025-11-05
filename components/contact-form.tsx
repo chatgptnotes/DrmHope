@@ -270,7 +270,7 @@ export function ContactForm() {
 
       <div className="container mx-auto px-4">
         <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center mb-12">
-          <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-5xl text-red-700 dark:text-red-300">
+          <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-5xl text-red-700 dark:text-white">
             Get In Touch
           </h2>
           <p className="max-w-[85%] leading-normal text-gray-700 dark:text-gray-300 sm:text-lg sm:leading-7">
@@ -282,7 +282,7 @@ export function ContactForm() {
           {/* Left Side - Form */}
           <div className="order-2 md:order-1">
             <div className="bg-red-50 dark:bg-red-950/50 p-8 rounded-lg border border-red-100 dark:border-red-900">
-              <h3 className="text-3xl font-bold text-red-700 dark:text-red-300 mb-2">
+              <h3 className="text-3xl font-bold text-red-700 dark:text-white mb-2">
                 Let's create something.
               </h3>
               <p className="text-gray-600 dark:text-gray-400 mb-6">
@@ -339,7 +339,7 @@ export function ContactForm() {
 
                 {/* Error Message */}
                 {submitStatus === 'error' && (
-                  <div className="p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg text-red-700 dark:text-red-300 text-sm">
+                  <div className="p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg text-red-700 dark:text-white text-sm">
                     ✗ Failed to send message. Please try again or contact us directly.
                   </div>
                 )}
@@ -348,7 +348,7 @@ export function ContactForm() {
               {/* Contact Info */}
               <div className="mt-8 pt-8 border-t border-red-200 dark:border-red-800 space-y-4">
                 <div className="flex gap-3 items-start">
-                  <MapPin className="h-5 w-5 text-red-600 dark:text-red-400 mt-0.5 flex-shrink-0" />
+                  <MapPin className="h-5 w-5 text-red-600 dark:text-white mt-0.5 flex-shrink-0" />
                   <div className="text-sm">
                     <p className="text-gray-700 dark:text-gray-300">
                       701, Casa Royal Apartment, Mohan Nagar<br />
@@ -357,11 +357,11 @@ export function ContactForm() {
                   </div>
                 </div>
                 <div className="flex gap-3 items-center">
-                  <Phone className="h-5 w-5 text-red-600 dark:text-red-400 flex-shrink-0" />
+                  <Phone className="h-5 w-5 text-red-600 dark:text-white flex-shrink-0" />
                   <p className="text-sm text-gray-700 dark:text-gray-300">+91 8412030400</p>
                 </div>
                 <div className="flex gap-3 items-center">
-                  <Mail className="h-5 w-5 text-red-600 dark:text-red-400 flex-shrink-0" />
+                  <Mail className="h-5 w-5 text-red-600 dark:text-white flex-shrink-0" />
                   <p className="text-sm text-gray-700 dark:text-gray-300">CMD@HOPEHOSPITAL.COM</p>
                 </div>
               </div>

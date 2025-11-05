@@ -16,7 +16,7 @@ export function Solutions() {
     >
       <div className="container mx-auto px-4">
         <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
-          <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-5xl text-red-700 dark:text-red-300">
+          <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-5xl text-red-700 dark:text-white">
             Our Software Solutions
           </h2>
           <p className="max-w-[85%] leading-normal text-gray-700 dark:text-gray-300 sm:text-lg sm:leading-7">
@@ -29,37 +29,37 @@ export function Solutions() {
             <TabsList className="grid w-full grid-cols-3 md:grid-cols-6 bg-red-100 dark:bg-red-900 mb-8">
               <TabsTrigger
                 value="healthcare"
-                className="data-[state=active]:bg-white dark:data-[state=active]:bg-gray-950 data-[state=active]:text-red-700 dark:data-[state=active]:text-red-300"
+                className="data-[state=active]:bg-white dark:data-[state=active]:bg-gray-950 data-[state=active]:text-red-700 dark:data-[state=active]:text-white"
               >
                 Healthcare
               </TabsTrigger>
               <TabsTrigger
                 value="finance"
-                className="data-[state=active]:bg-white dark:data-[state=active]:bg-gray-950 data-[state=active]:text-red-700 dark:data-[state=active]:text-red-300"
+                className="data-[state=active]:bg-white dark:data-[state=active]:bg-gray-950 data-[state=active]:text-red-700 dark:data-[state=active]:text-white"
               >
                 Finance
               </TabsTrigger>
               <TabsTrigger
                 value="education"
-                className="data-[state=active]:bg-white dark:data-[state=active]:bg-gray-950 data-[state=active]:text-red-700 dark:data-[state=active]:text-red-300"
+                className="data-[state=active]:bg-white dark:data-[state=active]:bg-gray-950 data-[state=active]:text-red-700 dark:data-[state=active]:text-white"
               >
                 Education
               </TabsTrigger>
               <TabsTrigger
                 value="retail"
-                className="data-[state=active]:bg-white dark:data-[state=active]:bg-gray-950 data-[state=active]:text-red-700 dark:data-[state=active]:text-red-300"
+                className="data-[state=active]:bg-white dark:data-[state=active]:bg-gray-950 data-[state=active]:text-red-700 dark:data-[state=active]:text-white"
               >
                 Retail
               </TabsTrigger>
               <TabsTrigger
                 value="manufacturing"
-                className="data-[state=active]:bg-white dark:data-[state=active]:bg-gray-950 data-[state=active]:text-red-700 dark:data-[state=active]:text-red-300"
+                className="data-[state=active]:bg-white dark:data-[state=active]:bg-gray-950 data-[state=active]:text-red-700 dark:data-[state=active]:text-white"
               >
                 Manufacturing
               </TabsTrigger>
               <TabsTrigger
                 value="custom"
-                className="data-[state=active]:bg-white dark:data-[state=active]:bg-gray-950 data-[state=active]:text-red-700 dark:data-[state=active]:text-red-300"
+                className="data-[state=active]:bg-white dark:data-[state=active]:bg-gray-950 data-[state=active]:text-red-700 dark:data-[state=active]:text-white"
               >
                 Custom
               </TabsTrigger>
@@ -73,9 +73,9 @@ export function Solutions() {
                 <div>
                   <div className="flex items-center gap-3 mb-4">
                     <div className="bg-red-100 dark:bg-red-900 p-2 rounded-full">
-                      <Users className="h-6 w-6 text-red-700 dark:text-red-300" />
+                      <Users className="h-6 w-6 text-red-700 dark:text-white" />
                     </div>
-                    <h3 className="text-2xl font-bold text-red-700 dark:text-red-300">Healthcare Solutions</h3>
+                    <h3 className="text-2xl font-bold text-red-700 dark:text-white">Healthcare Solutions</h3>
                   </div>
                   <p className="text-gray-700 dark:text-gray-300 mb-6">
                     Our comprehensive healthcare software solutions streamline all aspects of healthcare operations,
@@ -83,7 +83,7 @@ export function Solutions() {
                     patient care while optimizing operational efficiency.
                   </p>
                   <div className="space-y-4">
-                    <h4 className="text-xl font-semibold text-red-700 dark:text-red-300">Key Features</h4>
+                    <h4 className="text-xl font-semibold text-red-700 dark:text-white">Key Features</h4>
                     <ul className="list-disc pl-5 space-y-2 text-gray-700 dark:text-gray-300">
                       <li>Hospital Management Systems</li>
                       <li>Electronic Health Records (EHR)</li>
@@ -97,7 +97,7 @@ export function Solutions() {
                 </div>
                 <div className="space-y-6">
                   <div>
-                    <h4 className="text-xl font-semibold text-red-700 dark:text-red-300 mb-3">Benefits</h4>
+                    <h4 className="text-xl font-semibold text-red-700 dark:text-white mb-3">Benefits</h4>
                     <ul className="list-disc pl-5 space-y-2 text-gray-700 dark:text-gray-300">
                       <li>Improved operational efficiency and reduced administrative burden</li>
                       <li>Enhanced patient experience with faster service delivery</li>
@@ -107,7 +107,7 @@ export function Solutions() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="text-xl font-semibold text-red-700 dark:text-red-300 mb-3">Ideal For</h4>
+                    <h4 className="text-xl font-semibold text-red-700 dark:text-white mb-3">Ideal For</h4>
                     <ul className="list-disc pl-5 space-y-2 text-gray-700 dark:text-gray-300">
                       <li>Hospitals and medical centers</li>
                       <li>Clinics and specialty practices</li>
@@ -133,9 +133,9 @@ export function Solutions() {
                 <div>
                   <div className="flex items-center gap-3 mb-4">
                     <div className="bg-red-100 dark:bg-red-900 p-2 rounded-full">
-                      <CreditCard className="h-6 w-6 text-red-700 dark:text-red-300" />
+                      <CreditCard className="h-6 w-6 text-red-700 dark:text-white" />
                     </div>
-                    <h3 className="text-2xl font-bold text-red-700 dark:text-red-300">Financial Software</h3>
+                    <h3 className="text-2xl font-bold text-red-700 dark:text-white">Financial Software</h3>
                   </div>
                   <p className="text-gray-700 dark:text-gray-300 mb-6">
                     Our financial software solutions provide robust tools for managing financial operations,
@@ -143,7 +143,7 @@ export function Solutions() {
                     processes and decision-making.
                   </p>
                   <div className="space-y-4">
-                    <h4 className="text-xl font-semibold text-red-700 dark:text-red-300">Key Features</h4>
+                    <h4 className="text-xl font-semibold text-red-700 dark:text-white">Key Features</h4>
                     <ul className="list-disc pl-5 space-y-2 text-gray-700 dark:text-gray-300">
                       <li>Banking Systems</li>
                       <li>Payment Processing Solutions</li>
@@ -157,7 +157,7 @@ export function Solutions() {
                 </div>
                 <div className="space-y-6">
                   <div>
-                    <h4 className="text-xl font-semibold text-red-700 dark:text-red-300 mb-3">Benefits</h4>
+                    <h4 className="text-xl font-semibold text-red-700 dark:text-white mb-3">Benefits</h4>
                     <ul className="list-disc pl-5 space-y-2 text-gray-700 dark:text-gray-300">
                       <li>Streamlined financial operations and reporting</li>
                       <li>Enhanced security for financial transactions</li>
@@ -167,7 +167,7 @@ export function Solutions() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="text-xl font-semibold text-red-700 dark:text-red-300 mb-3">Ideal For</h4>
+                    <h4 className="text-xl font-semibold text-red-700 dark:text-white mb-3">Ideal For</h4>
                     <ul className="list-disc pl-5 space-y-2 text-gray-700 dark:text-gray-300">
                       <li>Banks and credit unions</li>
                       <li>Insurance companies</li>
@@ -193,9 +193,9 @@ export function Solutions() {
                 <div>
                   <div className="flex items-center gap-3 mb-4">
                     <div className="bg-red-100 dark:bg-red-900 p-2 rounded-full">
-                      <BookOpen className="h-6 w-6 text-red-700 dark:text-red-300" />
+                      <BookOpen className="h-6 w-6 text-red-700 dark:text-white" />
                     </div>
-                    <h3 className="text-2xl font-bold text-red-700 dark:text-red-300">Education Management</h3>
+                    <h3 className="text-2xl font-bold text-red-700 dark:text-white">Education Management</h3>
                   </div>
                   <p className="text-gray-700 dark:text-gray-300 mb-6">
                     Our education management solutions help educational institutions streamline administrative
@@ -203,7 +203,7 @@ export function Solutions() {
                     teachers, and parents.
                   </p>
                   <div className="space-y-4">
-                    <h4 className="text-xl font-semibold text-red-700 dark:text-red-300">Key Features</h4>
+                    <h4 className="text-xl font-semibold text-red-700 dark:text-white">Key Features</h4>
                     <ul className="list-disc pl-5 space-y-2 text-gray-700 dark:text-gray-300">
                       <li>School Management Systems</li>
                       <li>Learning Management Platforms</li>
@@ -217,7 +217,7 @@ export function Solutions() {
                 </div>
                 <div className="space-y-6">
                   <div>
-                    <h4 className="text-xl font-semibold text-red-700 dark:text-red-300 mb-3">Benefits</h4>
+                    <h4 className="text-xl font-semibold text-red-700 dark:text-white mb-3">Benefits</h4>
                     <ul className="list-disc pl-5 space-y-2 text-gray-700 dark:text-gray-300">
                       <li>Streamlined administrative processes</li>
                       <li>Enhanced teaching and learning experiences</li>
@@ -227,7 +227,7 @@ export function Solutions() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="text-xl font-semibold text-red-700 dark:text-red-300 mb-3">Ideal For</h4>
+                    <h4 className="text-xl font-semibold text-red-700 dark:text-white mb-3">Ideal For</h4>
                     <ul className="list-disc pl-5 space-y-2 text-gray-700 dark:text-gray-300">
                       <li>K-12 schools</li>
                       <li>Colleges and universities</li>
@@ -253,16 +253,16 @@ export function Solutions() {
                 <div>
                   <div className="flex items-center gap-3 mb-4">
                     <div className="bg-red-100 dark:bg-red-900 p-2 rounded-full">
-                      <ShoppingBag className="h-6 w-6 text-red-700 dark:text-red-300" />
+                      <ShoppingBag className="h-6 w-6 text-red-700 dark:text-white" />
                     </div>
-                    <h3 className="text-2xl font-bold text-red-700 dark:text-red-300">Retail & E-commerce</h3>
+                    <h3 className="text-2xl font-bold text-red-700 dark:text-white">Retail & E-commerce</h3>
                   </div>
                   <p className="text-gray-700 dark:text-gray-300 mb-6">
                     Our retail and e-commerce solutions help businesses manage inventory, process sales, and enhance
                     customer experiences across physical stores and online platforms.
                   </p>
                   <div className="space-y-4">
-                    <h4 className="text-xl font-semibold text-red-700 dark:text-red-300">Key Features</h4>
+                    <h4 className="text-xl font-semibold text-red-700 dark:text-white">Key Features</h4>
                     <ul className="list-disc pl-5 space-y-2 text-gray-700 dark:text-gray-300">
                       <li>Inventory Management Systems</li>
                       <li>Point of Sale (POS) Solutions</li>
@@ -276,7 +276,7 @@ export function Solutions() {
                 </div>
                 <div className="space-y-6">
                   <div>
-                    <h4 className="text-xl font-semibold text-red-700 dark:text-red-300 mb-3">Benefits</h4>
+                    <h4 className="text-xl font-semibold text-red-700 dark:text-white mb-3">Benefits</h4>
                     <ul className="list-disc pl-5 space-y-2 text-gray-700 dark:text-gray-300">
                       <li>Streamlined inventory and sales management</li>
                       <li>Enhanced customer shopping experiences</li>
@@ -286,7 +286,7 @@ export function Solutions() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="text-xl font-semibold text-red-700 dark:text-red-300 mb-3">Ideal For</h4>
+                    <h4 className="text-xl font-semibold text-red-700 dark:text-white mb-3">Ideal For</h4>
                     <ul className="list-disc pl-5 space-y-2 text-gray-700 dark:text-gray-300">
                       <li>Retail stores</li>
                       <li>E-commerce businesses</li>
@@ -312,9 +312,9 @@ export function Solutions() {
                 <div>
                   <div className="flex items-center gap-3 mb-4">
                     <div className="bg-red-100 dark:bg-red-900 p-2 rounded-full">
-                      <Building className="h-6 w-6 text-red-700 dark:text-red-300" />
+                      <Building className="h-6 w-6 text-red-700 dark:text-white" />
                     </div>
-                    <h3 className="text-2xl font-bold text-red-700 dark:text-red-300">Manufacturing ERP</h3>
+                    <h3 className="text-2xl font-bold text-red-700 dark:text-white">Manufacturing ERP</h3>
                   </div>
                   <p className="text-gray-700 dark:text-gray-300 mb-6">
                     Our manufacturing ERP solutions integrate all aspects of manufacturing operations, from production
@@ -322,7 +322,7 @@ export function Solutions() {
                     productivity.
                   </p>
                   <div className="space-y-4">
-                    <h4 className="text-xl font-semibold text-red-700 dark:text-red-300">Key Features</h4>
+                    <h4 className="text-xl font-semibold text-red-700 dark:text-white">Key Features</h4>
                     <ul className="list-disc pl-5 space-y-2 text-gray-700 dark:text-gray-300">
                       <li>Production Planning and Scheduling</li>
                       <li>Inventory and Warehouse Management</li>
@@ -336,7 +336,7 @@ export function Solutions() {
                 </div>
                 <div className="space-y-6">
                   <div>
-                    <h4 className="text-xl font-semibold text-red-700 dark:text-red-300 mb-3">Benefits</h4>
+                    <h4 className="text-xl font-semibold text-red-700 dark:text-white mb-3">Benefits</h4>
                     <ul className="list-disc pl-5 space-y-2 text-gray-700 dark:text-gray-300">
                       <li>Streamlined production processes</li>
                       <li>Improved inventory management and reduced waste</li>
@@ -346,7 +346,7 @@ export function Solutions() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="text-xl font-semibold text-red-700 dark:text-red-300 mb-3">Ideal For</h4>
+                    <h4 className="text-xl font-semibold text-red-700 dark:text-white mb-3">Ideal For</h4>
                     <ul className="list-disc pl-5 space-y-2 text-gray-700 dark:text-gray-300">
                       <li>Manufacturing plants</li>
                       <li>Production facilities</li>
@@ -372,16 +372,16 @@ export function Solutions() {
                 <div>
                   <div className="flex items-center gap-3 mb-4">
                     <div className="bg-red-100 dark:bg-red-900 p-2 rounded-full">
-                      <Briefcase className="h-6 w-6 text-red-700 dark:text-red-300" />
+                      <Briefcase className="h-6 w-6 text-red-700 dark:text-white" />
                     </div>
-                    <h3 className="text-2xl font-bold text-red-700 dark:text-red-300">Custom Software Solutions</h3>
+                    <h3 className="text-2xl font-bold text-red-700 dark:text-white">Custom Software Solutions</h3>
                   </div>
                   <p className="text-gray-700 dark:text-gray-300 mb-6">
                     Our custom software development services create tailored solutions to address your unique business
                     challenges and requirements, ensuring you get exactly what your organization needs to succeed.
                   </p>
                   <div className="space-y-4">
-                    <h4 className="text-xl font-semibold text-red-700 dark:text-red-300">Our Approach</h4>
+                    <h4 className="text-xl font-semibold text-red-700 dark:text-white">Our Approach</h4>
                     <ul className="list-disc pl-5 space-y-2 text-gray-700 dark:text-gray-300">
                       <li>Thorough business analysis and requirements gathering</li>
                       <li>Collaborative design and planning process</li>
@@ -395,7 +395,7 @@ export function Solutions() {
                 </div>
                 <div className="space-y-6">
                   <div>
-                    <h4 className="text-xl font-semibold text-red-700 dark:text-red-300 mb-3">
+                    <h4 className="text-xl font-semibold text-red-700 dark:text-white mb-3">
                       Types of Custom Solutions
                     </h4>
                     <ul className="list-disc pl-5 space-y-2 text-gray-700 dark:text-gray-300">
@@ -409,7 +409,7 @@ export function Solutions() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="text-xl font-semibold text-red-700 dark:text-red-300 mb-3">Ideal For</h4>
+                    <h4 className="text-xl font-semibold text-red-700 dark:text-white mb-3">Ideal For</h4>
                     <ul className="list-disc pl-5 space-y-2 text-gray-700 dark:text-gray-300">
                       <li>Organizations with unique business processes</li>
                       <li>Companies needing specialized functionality</li>
@@ -431,10 +431,10 @@ export function Solutions() {
 
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md border border-red-100 dark:border-red-900">
-            <div className="flex items-center justify-center h-12 w-12 rounded-md bg-red-100 dark:bg-red-900 text-red-600 dark:text-red-300 mb-4 mx-auto">
+            <div className="flex items-center justify-center h-12 w-12 rounded-md bg-red-100 dark:bg-red-900 text-red-600 dark:text-white mb-4 mx-auto">
               <Server className="h-6 w-6" />
             </div>
-            <h3 className="text-xl font-bold text-center text-red-700 dark:text-red-300 mb-2">
+            <h3 className="text-xl font-bold text-center text-red-700 dark:text-white mb-2">
               Implementation Support
             </h3>
             <p className="text-center text-gray-700 dark:text-gray-300">
@@ -444,10 +444,10 @@ export function Solutions() {
           </div>
 
           <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md border border-red-100 dark:border-red-900">
-            <div className="flex items-center justify-center h-12 w-12 rounded-md bg-red-100 dark:bg-red-900 text-red-600 dark:text-red-300 mb-4 mx-auto">
+            <div className="flex items-center justify-center h-12 w-12 rounded-md bg-red-100 dark:bg-red-900 text-red-600 dark:text-white mb-4 mx-auto">
               <CreditCard className="h-6 w-6" />
             </div>
-            <h3 className="text-xl font-bold text-center text-red-700 dark:text-red-300 mb-2">Flexible Pricing</h3>
+            <h3 className="text-xl font-bold text-center text-red-700 dark:text-white mb-2">Flexible Pricing</h3>
             <p className="text-center text-gray-700 dark:text-gray-300">
               Choose from subscription-based or perpetual licensing models with options tailored to organizations of all
               sizes.
@@ -455,10 +455,10 @@ export function Solutions() {
           </div>
 
           <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md border border-red-100 dark:border-red-900">
-            <div className="flex items-center justify-center h-12 w-12 rounded-md bg-red-100 dark:bg-red-900 text-red-600 dark:text-red-300 mb-4 mx-auto">
+            <div className="flex items-center justify-center h-12 w-12 rounded-md bg-red-100 dark:bg-red-900 text-red-600 dark:text-white mb-4 mx-auto">
               <ShieldCheck className="h-6 w-6" />
             </div>
-            <h3 className="text-xl font-bold text-center text-red-700 dark:text-red-300 mb-2">Security & Compliance</h3>
+            <h3 className="text-xl font-bold text-center text-red-700 dark:text-white mb-2">Security & Compliance</h3>
             <p className="text-center text-gray-700 dark:text-gray-300">
               All our solutions are designed with robust security features and can be configured to meet
               industry-specific regulations and standards.

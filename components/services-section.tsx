@@ -338,11 +338,11 @@ export function ServicesSection() {
       <div className="container mx-auto px-4">
         {/* Hero Section */}
         <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center mb-16">
-          <Badge className="bg-red-100 dark:bg-red-900 text-red-700 dark:text-red-300 px-4 py-2 text-sm font-semibold">
+          <Badge className="bg-red-100 dark:bg-red-900 text-red-700 dark:text-white px-4 py-2 text-sm font-semibold">
             <Sparkles className="h-4 w-4 mr-2 inline" />
             AI-Powered Innovation
           </Badge>
-          <h1 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl text-red-700 dark:text-red-300">
+          <h1 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl text-red-700 dark:text-white">
             Our Services
           </h1>
           <p className="max-w-[85%] leading-normal text-gray-700 dark:text-gray-300 sm:text-lg sm:leading-7">
@@ -385,9 +385,9 @@ export function ServicesSection() {
                   <div>
                     <div className="flex items-center gap-3 mb-4">
                       <div className="bg-red-100 dark:bg-red-900 p-3 rounded-full">
-                        <service.icon className="h-8 w-8 text-red-700 dark:text-red-300" />
+                        <service.icon className="h-8 w-8 text-red-700 dark:text-white" />
                       </div>
-                      <h2 className="text-2xl md:text-3xl font-bold text-red-700 dark:text-red-300">
+                      <h2 className="text-2xl md:text-3xl font-bold text-red-700 dark:text-white">
                         {service.title}
                       </h2>
                     </div>
@@ -401,7 +401,7 @@ export function ServicesSection() {
                             key={index}
                             className="text-center p-4 bg-red-50 dark:bg-red-950/30 rounded-lg border border-red-100 dark:border-red-900"
                           >
-                            <div className="text-2xl font-bold text-red-700 dark:text-red-300">{stat.value}</div>
+                            <div className="text-2xl font-bold text-red-700 dark:text-white">{stat.value}</div>
                             <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">{stat.label}</div>
                           </div>
                         ))}
@@ -411,8 +411,8 @@ export function ServicesSection() {
                     {/* AI Capabilities */}
                     <div className="mb-6">
                       <div className="flex items-center gap-2 mb-3">
-                        <Sparkles className="h-5 w-5 text-red-600 dark:text-red-400" />
-                        <h3 className="text-xl font-semibold text-red-700 dark:text-red-300">AI Capabilities</h3>
+                        <Sparkles className="h-5 w-5 text-red-600 dark:text-white" />
+                        <h3 className="text-xl font-semibold text-red-700 dark:text-white">AI Capabilities</h3>
                       </div>
                       <ul className="space-y-2">
                         {service.aiCapabilities.slice(0, 4).map((capability, index) => (
@@ -420,7 +420,7 @@ export function ServicesSection() {
                             key={index}
                             className="flex items-start gap-2 text-gray-700 dark:text-gray-300 bg-red-50 dark:bg-red-950/30 p-3 rounded-md"
                           >
-                            <CheckCircle2 className="h-5 w-5 mt-0.5 text-red-600 dark:text-red-400 flex-shrink-0" />
+                            <CheckCircle2 className="h-5 w-5 mt-0.5 text-red-600 dark:text-white flex-shrink-0" />
                             <span>{capability}</span>
                           </li>
                         ))}
@@ -432,11 +432,11 @@ export function ServicesSection() {
                   <div>
                     {/* Key Features */}
                     <div className="mb-6">
-                      <h3 className="text-xl font-semibold text-red-700 dark:text-red-300 mb-3">Key Features</h3>
+                      <h3 className="text-xl font-semibold text-red-700 dark:text-white mb-3">Key Features</h3>
                       <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
                         {service.keyFeatures.map((feature, index) => (
                           <li key={index} className="flex items-start gap-2 text-gray-700 dark:text-gray-300">
-                            <span className="text-red-600 dark:text-red-400 mt-1">•</span>
+                            <span className="text-red-600 dark:text-white mt-1">•</span>
                             <span className="text-sm">{feature}</span>
                           </li>
                         ))}
@@ -445,7 +445,7 @@ export function ServicesSection() {
 
                     {/* Technologies */}
                     <div className="mb-6">
-                      <h3 className="text-xl font-semibold text-red-700 dark:text-red-300 mb-3">Technologies</h3>
+                      <h3 className="text-xl font-semibold text-red-700 dark:text-white mb-3">Technologies</h3>
                       <div className="flex flex-wrap gap-2">
                         {service.technologies.map((tech, index) => (
                           <Badge
@@ -461,7 +461,7 @@ export function ServicesSection() {
 
                     {/* Example Projects */}
                     <div className="mb-6">
-                      <h3 className="text-xl font-semibold text-red-700 dark:text-red-300 mb-3">Example Projects</h3>
+                      <h3 className="text-xl font-semibold text-red-700 dark:text-white mb-3">Example Projects</h3>
                       <ul className="space-y-2">
                         {service.exampleProjects.slice(0, 4).map((project, index) => (
                           <li key={index} className="text-gray-700 dark:text-gray-300">
@@ -477,7 +477,7 @@ export function ServicesSection() {
                               </a>
                             ) : (
                               <span className="flex items-center gap-2">
-                                <ArrowRight className="h-4 w-4 text-red-600 dark:text-red-400" />
+                                <ArrowRight className="h-4 w-4 text-red-600 dark:text-white" />
                                 {project.name}
                               </span>
                             )}
@@ -506,7 +506,7 @@ export function ServicesSection() {
         {/* Technology Stack */}
         <div className="mb-16">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-red-700 dark:text-red-300 mb-4">Our Technology Stack</h2>
+            <h2 className="text-3xl font-bold text-red-700 dark:text-white mb-4">Our Technology Stack</h2>
             <p className="text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
               We leverage cutting-edge technologies to build robust, scalable, and secure AI-powered solutions
             </p>
@@ -517,16 +517,16 @@ export function ServicesSection() {
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-2">
                     <div className="bg-red-100 dark:bg-red-900 p-2 rounded-full">
-                      <category.icon className="h-5 w-5 text-red-700 dark:text-red-300" />
+                      <category.icon className="h-5 w-5 text-red-700 dark:text-white" />
                     </div>
-                    <CardTitle className="text-lg text-red-700 dark:text-red-300">{category.name}</CardTitle>
+                    <CardTitle className="text-lg text-red-700 dark:text-white">{category.name}</CardTitle>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2">
                     {category.items.map((item, idx) => (
                       <li key={idx} className="flex items-center gap-2 text-gray-700 dark:text-gray-300 text-sm">
-                        <CheckCircle2 className="h-4 w-4 text-red-600 dark:text-red-400" />
+                        <CheckCircle2 className="h-4 w-4 text-red-600 dark:text-white" />
                         {item}
                       </li>
                     ))}
@@ -540,7 +540,7 @@ export function ServicesSection() {
         {/* Our Approach */}
         <div className="mb-16 bg-white dark:bg-gray-900 p-8 md:p-12 rounded-lg shadow-md border border-red-100 dark:border-red-900">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-red-700 dark:text-red-300 mb-4">Our Development Approach</h2>
+            <h2 className="text-3xl font-bold text-red-700 dark:text-white mb-4">Our Development Approach</h2>
             <p className="text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
               A proven methodology that ensures successful AI project delivery
             </p>
@@ -573,10 +573,10 @@ export function ServicesSection() {
               },
             ].map((phase, index) => (
               <div key={index} className="text-center">
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-red-100 dark:bg-red-900 text-red-700 dark:text-red-300 text-2xl font-bold mb-4">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-red-100 dark:bg-red-900 text-red-700 dark:text-white text-2xl font-bold mb-4">
                   {phase.step}
                 </div>
-                <h3 className="text-xl font-semibold text-red-700 dark:text-red-300 mb-2">{phase.title}</h3>
+                <h3 className="text-xl font-semibold text-red-700 dark:text-white mb-2">{phase.title}</h3>
                 <p className="text-gray-700 dark:text-gray-300 text-sm">{phase.description}</p>
               </div>
             ))}
@@ -609,10 +609,10 @@ export function ServicesSection() {
               className="border-red-100 dark:border-red-900 hover:shadow-lg transition-shadow text-center"
             >
               <CardHeader>
-                <div className="flex items-center justify-center h-16 w-16 rounded-full bg-red-100 dark:bg-red-900 text-red-600 dark:text-red-300 mb-4 mx-auto">
+                <div className="flex items-center justify-center h-16 w-16 rounded-full bg-red-100 dark:bg-red-900 text-red-600 dark:text-white mb-4 mx-auto">
                   <benefit.icon className="h-8 w-8" />
                 </div>
-                <CardTitle className="text-xl text-red-700 dark:text-red-300">{benefit.title}</CardTitle>
+                <CardTitle className="text-xl text-red-700 dark:text-white">{benefit.title}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-700 dark:text-gray-300">{benefit.description}</p>

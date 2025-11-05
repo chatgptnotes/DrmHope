@@ -103,7 +103,7 @@ export function DeliverCards() {
               <CardWrapper
                 {...linkProps}
                 key={index}
-                className={`group relative bg-white rounded-lg border-l-4 ${card.borderColor} shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2`}
+                className={`group relative bg-white dark:bg-gray-800 rounded-lg border-l-4 ${card.borderColor} shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2`}
               >
                 <div className="p-6 space-y-4">
                   {/* Icon and Title */}
@@ -113,10 +113,10 @@ export function DeliverCards() {
                       strokeWidth={1.5}
                     />
                     <div>
-                      <h3 className="text-xl font-bold text-gray-900">
+                      <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100">
                         {card.title}
                       </h3>
-                      <p className="text-sm text-gray-600 mt-1">
+                      <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
                         {card.subtitle}
                       </p>
                     </div>
@@ -127,7 +127,7 @@ export function DeliverCards() {
                     {card.items.map((item, itemIndex) => (
                       <li
                         key={itemIndex}
-                        className="flex items-start text-gray-700 text-sm"
+                        className="flex items-start text-gray-700 dark:text-gray-300 text-sm"
                       >
                         <span className={`inline-block w-1.5 h-1.5 rounded-full ${card.borderColor.replace('border-l-', 'bg-')} mt-2 mr-2 flex-shrink-0`} />
                         <span>{item}</span>
