@@ -565,7 +565,11 @@ const projects: Project[] = [
 
 const categories = ["All", "Healthcare", "Business", "Beauty", "Finance", "Wedding", "Education", "AI Technology"]
 
-export function Projects() {
+interface ProjectsProps {
+  hideHeader?: boolean
+}
+
+export function Projects({ hideHeader = false }: ProjectsProps) {
   const [selectedCategory, setSelectedCategory] = useState("All")
   const [selectedProject, setSelectedProject] = useState<Project | null>(null)
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -579,17 +583,19 @@ export function Projects() {
   }
 
   return (
-    <section className="py-16 bg-gradient-to-b from-white to-red-50 dark:from-gray-950 dark:to-red-950/50">
+    <section className={hideHeader ? "" : "py-16 bg-gradient-to-b from-white to-red-50 dark:from-gray-950 dark:to-red-950/50"}>
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center mb-12">
-          <h1 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-5xl text-red-700 dark:text-white">
-            Our Projects
-          </h1>
-          <p className="max-w-[85%] leading-normal text-gray-700 dark:text-gray-300 sm:text-lg sm:leading-7">
-            Explore our portfolio of successful software solutions delivered across various industries
-          </p>
-        </div>
+        {!hideHeader && (
+          <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center mb-12">
+            <h1 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-5xl text-red-700 dark:text-white">
+              Our Projects
+            </h1>
+            <p className="max-w-[85%] leading-normal text-gray-700 dark:text-gray-300 sm:text-lg sm:leading-7">
+              Explore our portfolio of successful software solutions delivered across various industries
+            </p>
+          </div>
+        )}
 
         {/* Category Filter */}
         <div className="flex flex-wrap justify-center gap-3 mb-12">
