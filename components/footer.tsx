@@ -150,7 +150,7 @@ export function Footer() {
         </div>
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-sm text-secondary-600 dark:text-secondary-400">
-            © {new Date().getFullYear()} DR HOPE Software Pvt Ltd. All rights reserved.
+            © {new Date().getFullYear()} Dr.M Hope. All rights reserved.
           </p>
           <div className="flex gap-4">
             <Link

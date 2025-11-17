@@ -92,26 +92,26 @@ export function HeroSection() {
 
   const industries = [
     {
-      title: "Healthcare Solutions",
-      description: "Hospital Management Systems, EHR, and Telemedicine platforms transforming patient care.",
+      title: "AI-Powered Healthcare",
+      description: "AI-driven Hospital Information Systems, NLP medical records, and predictive diagnostics transforming patient care.",
       image: "/caring-doctor.png",
       color: "#FD5F07"
     },
     {
-      title: "Financial Technology",
-      description: "Banking systems, payment processing, and financial analytics for modern enterprises.",
-      image: "/placeholder.jpg",
+      title: "AI Agentic Platforms",
+      description: "Intelligent AI agents for automation, voice AI systems, and AI-powered sales platforms.",
+      image: "/images/pexels-markusspiske-225769.jpg",
       color: "#009CB3"
     },
     {
-      title: "Government Systems",
-      description: "Secure and compliant digital transformation solutions for public sector.",
-      image: "/placeholder.jpg",
+      title: "Machine Learning Solutions",
+      description: "Computer vision, NLP, predictive analytics, and deep learning platforms for enterprise AI.",
+      image: "/images/pexels-markusspiske-225769.jpg",
       color: "#6f7aa6"
     },
     {
-      title: "AI & Machine Learning",
-      description: "Intelligent automation and predictive analytics powering business growth.",
+      title: "Generative AI Platforms",
+      description: "AI software development with LLMs, AI chatbots, and intelligent automation systems.",
       image: "/images/pexels-markusspiske-225769.jpg",
       color: "#FD5F07"
     },
@@ -147,22 +147,57 @@ export function HeroSection() {
       <div className="container relative z-10 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center max-w-7xl">
         {/* Left Content */}
         <div className="max-w-2xl text-center lg:text-left order-2 lg:order-1">
+          <div className="inline-block mb-4 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
+            <span className="text-white/90 text-sm font-medium">🤖 AI Software Development Company</span>
+          </div>
+
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-8">
-            Transforming Business with{" "}
-            <span className="text-white">AI Innovation</span>
+            Build Intelligent{" "}
+            <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
+              AI Software
+            </span>{" "}
+            & AI Agentic Platforms
           </h1>
 
           <p className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed">
-            Our solutions are designed to transport your business to the heart of digital transformation, creating success stories that will last a lifetime. Uncover hidden opportunities with AI-powered innovation.
+            Leading AI software development company specializing in <strong className="text-white">AI-powered healthcare platforms</strong>, <strong className="text-white">AI agentic systems</strong>, machine learning solutions, and intelligent automation. 100+ AI projects delivered.
           </p>
 
-          <Button
-            size="lg"
-            className="bg-gray-100 hover:bg-[#6f7aa6] text-[#202134] hover:text-white px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-300 hover:scale-[0.98]"
-          >
-            Explore Solutions
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+          <div className="flex flex-wrap gap-4 justify-center lg:justify-start mb-8">
+            <div className="flex items-center gap-2 text-white/90">
+              <span className="text-2xl">🧠</span>
+              <span className="text-sm">Machine Learning</span>
+            </div>
+            <div className="flex items-center gap-2 text-white/90">
+              <span className="text-2xl">💬</span>
+              <span className="text-sm">NLP & LLMs</span>
+            </div>
+            <div className="flex items-center gap-2 text-white/90">
+              <span className="text-2xl">👁️</span>
+              <span className="text-sm">Computer Vision</span>
+            </div>
+            <div className="flex items-center gap-2 text-white/90">
+              <span className="text-2xl">🤖</span>
+              <span className="text-sm">AI Agents</span>
+            </div>
+          </div>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <Button
+              size="lg"
+              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-300 hover:scale-105 shadow-lg"
+            >
+              Explore AI Solutions
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-2 border-white/30 hover:bg-white/10 text-white px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-300"
+            >
+              View AI Projects
+            </Button>
+          </div>
         </div>
 
         {/* Right Slider */}
