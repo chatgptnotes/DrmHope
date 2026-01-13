@@ -7,10 +7,10 @@ export function Logo() {
         className="h-14 w-auto object-contain"
       />
       <div className="flex flex-col leading-tight">
-        <span className="text-xl font-bold text-white tracking-wide">
+        <span className="text-xl font-bold text-red-600 dark:text-white tracking-wide">
           Dr.M Hope
         </span>
-        <span className="text-[10px] uppercase tracking-widest text-gray-300 font-medium">
+        <span className="text-[10px] uppercase tracking-widest text-red-500 dark:text-gray-300 font-medium">
           Software Solutions
         </span>
       </div>
