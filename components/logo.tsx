@@ -7,8 +7,11 @@ export function Logo() {
         className="h-14 w-auto object-contain"
       />
       <div className="flex flex-col leading-tight">
-        <span className="text-xl font-bold text-primary-700 dark:text-primary-300">
+        <span className="text-xl font-bold text-white tracking-wide">
           Dr.M Hope
+        </span>
+        <span className="text-[10px] uppercase tracking-widest text-gray-300 font-medium">
+          Software Solutions
         </span>
       </div>
     </div>
