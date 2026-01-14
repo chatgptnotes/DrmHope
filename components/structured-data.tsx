@@ -1,4 +1,4 @@
-export function StructuredData() {
+export function StructuredData({ article }: { article?: any } = {}) {
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -327,6 +327,37 @@ export function StructuredData() {
     ]
   }
 
+  // Article schema for blog posts
+  const articleSchema = article ? {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": article.title,
+    "description": article.excerpt,
+    "image": "https://drmhope.com/images/1631365238387.jpeg",
+    "datePublished": article.publishDate,
+    "dateModified": article.publishDate,
+    "author": {
+      "@type": "Person",
+      "name": article.author,
+      "url": "https://drmhope.com/about"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "DrM Hope Softwares",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://drmhope.com/images/1631365238387.jpeg"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://drmhope.com/blog/${article.slug}`
+    },
+    "keywords": article.seoKeywords.join(", "),
+    "articleSection": article.category,
+    "wordCount": Math.ceil(article.content.length / 6)
+  } : null
+
   return (
     <>
       <script
@@ -353,6 +384,12 @@ export function StructuredData() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
+      {articleSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+      )}
     </>
   )
 }

@@ -1,4 +1,5 @@
 import { MetadataRoute } from 'next'
+import { blogPosts } from '@/data/blog-posts'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://drmhope.com'
@@ -90,5 +91,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ]
 
-  return [homepage, ...aiPages, ...corePages, ...secondaryPages]
+  // Blog posts - High priority for content
+  const blogPages = blogPosts.map((post) => ({
+    url: `${baseUrl}/blog/${post.slug}`,
+    lastModified: new Date(post.publishDate),
+    changeFrequency: 'monthly' as const,
+    priority: post.featured ? 0.85 : 0.75,
+  }))
+
+  // Blog listing page
+  const blogListing = {
+    url: `${baseUrl}/blog`,
+    lastModified: currentDate,
+    changeFrequency: 'weekly' as const,
+    priority: 0.9,
+  }
+
+  return [homepage, ...aiPages, ...corePages, blogListing, ...blogPages, ...secondaryPages]
 }
