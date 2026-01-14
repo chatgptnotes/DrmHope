@@ -361,15 +361,15 @@ export function ServicesSection() {
               if (service) setSelectedService(service)
             }}
           >
-            <TabsList className="grid w-full grid-cols-2 md:grid-cols-3 lg:grid-cols-6 bg-red-100 dark:bg-red-900 mb-8 h-auto">
+            <TabsList className="grid w-full grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 bg-red-100 dark:bg-red-900 mb-8 h-auto p-2">
               {services.map((service) => (
                 <TabsTrigger
                   key={service.id}
                   value={service.id}
-                  className="data-[state=active]:bg-white dark:data-[state=active]:bg-gray-950 data-[state=active]:text-red-700 dark:data-[state=active]:text-red-300 py-3 px-2 flex flex-col items-center gap-2"
+                  className="data-[state=active]:bg-white dark:data-[state=active]:bg-gray-950 data-[state=active]:text-red-700 dark:data-[state=active]:text-red-300 py-3 px-2 flex flex-col items-center gap-2 min-h-[80px]"
                 >
-                  <service.icon className="h-5 w-5" />
-                  <span className="text-xs md:text-sm text-center leading-tight whitespace-normal">{service.shortTitle}</span>
+                  <service.icon className="h-5 w-5 flex-shrink-0" />
+                  <span className="text-xs md:text-sm text-center leading-tight whitespace-normal break-words">{service.shortTitle}</span>
                 </TabsTrigger>
               ))}
             </TabsList>
@@ -395,7 +395,7 @@ export function ServicesSection() {
 
                     {/* Stats */}
                     {service.stats && (
-                      <div className="grid grid-cols-3 gap-4 mb-6">
+                      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
                         {service.stats.map((stat, index) => (
                           <div
                             key={index}

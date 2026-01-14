@@ -88,7 +88,7 @@ export function IntegrateCards() {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
           {cards.map((card, index) => {
             const Icon = card.icon
             return (

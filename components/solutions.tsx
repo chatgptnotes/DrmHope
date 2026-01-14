@@ -26,40 +26,40 @@ export function Solutions() {
 
         <div className="mt-16">
           <Tabs defaultValue="healthcare" className="w-full">
-            <TabsList className="grid w-full grid-cols-3 md:grid-cols-6 bg-red-100 dark:bg-red-900 mb-8">
+            <TabsList className="grid w-full grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 bg-red-100 dark:bg-red-900 mb-8 h-auto p-2">
               <TabsTrigger
                 value="healthcare"
-                className="data-[state=active]:bg-white dark:data-[state=active]:bg-gray-950 data-[state=active]:text-red-700 dark:data-[state=active]:text-white"
+                className="data-[state=active]:bg-white dark:data-[state=active]:bg-gray-950 data-[state=active]:text-red-700 dark:data-[state=active]:text-white py-3 px-2 text-xs md:text-sm"
               >
                 Healthcare
               </TabsTrigger>
               <TabsTrigger
                 value="finance"
-                className="data-[state=active]:bg-white dark:data-[state=active]:bg-gray-950 data-[state=active]:text-red-700 dark:data-[state=active]:text-white"
+                className="data-[state=active]:bg-white dark:data-[state=active]:bg-gray-950 data-[state=active]:text-red-700 dark:data-[state=active]:text-white py-3 px-2 text-xs md:text-sm"
               >
                 Finance
               </TabsTrigger>
               <TabsTrigger
                 value="education"
-                className="data-[state=active]:bg-white dark:data-[state=active]:bg-gray-950 data-[state=active]:text-red-700 dark:data-[state=active]:text-white"
+                className="data-[state=active]:bg-white dark:data-[state=active]:bg-gray-950 data-[state=active]:text-red-700 dark:data-[state=active]:text-white py-3 px-2 text-xs md:text-sm"
               >
                 Education
               </TabsTrigger>
               <TabsTrigger
                 value="retail"
-                className="data-[state=active]:bg-white dark:data-[state=active]:bg-gray-950 data-[state=active]:text-red-700 dark:data-[state=active]:text-white"
+                className="data-[state=active]:bg-white dark:data-[state=active]:bg-gray-950 data-[state=active]:text-red-700 dark:data-[state=active]:text-white py-3 px-2 text-xs md:text-sm"
               >
                 Retail
               </TabsTrigger>
               <TabsTrigger
                 value="manufacturing"
-                className="data-[state=active]:bg-white dark:data-[state=active]:bg-gray-950 data-[state=active]:text-red-700 dark:data-[state=active]:text-white"
+                className="data-[state=active]:bg-white dark:data-[state=active]:bg-gray-950 data-[state=active]:text-red-700 dark:data-[state=active]:text-white py-3 px-2 text-xs md:text-sm"
               >
                 Manufacturing
               </TabsTrigger>
               <TabsTrigger
                 value="custom"
-                className="data-[state=active]:bg-white dark:data-[state=active]:bg-gray-950 data-[state=active]:text-red-700 dark:data-[state=active]:text-white"
+                className="data-[state=active]:bg-white dark:data-[state=active]:bg-gray-950 data-[state=active]:text-red-700 dark:data-[state=active]:text-white py-3 px-2 text-xs md:text-sm"
               >
                 Custom
               </TabsTrigger>

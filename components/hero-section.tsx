@@ -206,7 +206,7 @@ export function HeroSection() {
             effect="cards"
             grabCursor={true}
             modules={[EffectCards, Autoplay]}
-            className="w-full h-[490px]"
+            className="w-full h-[350px] sm:h-[400px] md:h-[450px] lg:h-[490px]"
             autoplay={{
               delay: 3000,
               disableOnInteraction: false,
