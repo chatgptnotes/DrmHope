@@ -6,10 +6,10 @@ import { StructuredData } from '@/components/structured-data'
 export const metadata: Metadata = {
   metadataBase: new URL('https://drmhope.com'),
   title: {
-    default: 'DrM Hope - AI Software Development Company | 100+ AI Projects | Healthcare AI & Agentic Platforms',
-    template: '%s | DrM Hope - Leading AI Software Development Company'
+    default: 'DrM Hope - Better Technology | AI Driven Software Development & Technical Consulting',
+    template: '%s | DrM Hope - Better Technology'
   },
-  description: 'Top-rated AI software development company with 100+ successful projects. Specializing in AI-powered healthcare platforms, AI agentic systems, intelligent automation, voice AI, and custom AI solutions. Founded by Dr. Murali BK - The Surgeon Who Codes with AI. Technology partner of Bettroi serving healthcare, business, and enterprise sectors globally.',
+  description: 'AI-driven software development and technical consulting company. We leverage AI services and advanced automation to align technology with your business goals. Technology partner of Bettroi, founded by Dr. Murali BK (CTO of Bettroi). 100+ successful AI projects in healthcare, business automation, and enterprise solutions. Seamless adoption, enhanced customer experiences, and sustained growth.',
   keywords: [
     // Core AI Services
     'AI software development company',
@@ -78,10 +78,10 @@ export const metadata: Metadata = {
   publisher: 'DrM Hope',
   applicationName: 'DrM Hope AI Platform',
   openGraph: {
-    title: 'DrM Hope - Top AI Software Development Company | 100+ Successful AI Projects',
-    description: 'Leading AI software development company founded by Dr. Murali BK. Specializing in Healthcare AI, AI Agentic Platforms, Voice AI, Industrial IoT, and Custom AI Solutions. Technology partner of Bettroi. 100+ projects delivered.',
+    title: 'DrM Hope - Better Technology | AI Driven Software Development & Consulting',
+    description: 'AI-driven software development and technical consulting. We leverage AI services and advanced automation to align technology with your business goals. Technology partner of Bettroi. Founded by Dr. Murali BK, CTO of Bettroi. 100+ successful AI projects.',
     url: 'https://drmhope.com',
-    siteName: 'DrM Hope - AI Software Development Company',
+    siteName: 'DrM Hope - Better Technology',
     images: [
       {
         url: '/images/1631365238387.jpeg',

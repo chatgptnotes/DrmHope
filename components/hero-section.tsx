@@ -147,38 +147,39 @@ export function HeroSection() {
       <div className="container relative z-10 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center max-w-7xl">
         {/* Left Content */}
         <div className="max-w-2xl text-center lg:text-left order-2 lg:order-1">
-          <div className="inline-block mb-4 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
-            <span className="text-white/90 text-sm font-medium">🤖 Leading AI Software Development Company | 100+ Projects</span>
+          <div className="inline-block mb-6 px-6 py-3 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
+            <span className="text-white text-base font-medium">DrM Hope - Better Technology</span>
           </div>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-8">
-            Top-Rated{" "}
+            AI Driven Software Development{" "}
             <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
-              AI Software Development
-            </span>{" "}
-            Company | AI Agentic Platforms
+              & Technical Consulting
+            </span>
           </h1>
 
           <p className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed">
-            Award-winning AI software development company founded by <strong className="text-white">Dr. Murali BK</strong>. Specializing in <strong className="text-white">Healthcare AI</strong>, <strong className="text-white">AI Agentic Systems</strong>, <strong className="text-white">Voice AI</strong>, <strong className="text-white">Industrial IoT</strong>, and custom AI solutions. Technology partner of <strong className="text-white">Bettroi</strong>. 100+ successful AI projects delivered.
+            We leverage AI Services and advanced automation to align technology with your business goals. Our solutions ensure seamless adoption, enhanced customer experiences, and sustained growth in a fast-changing market.
           </p>
 
-          <div className="flex flex-wrap gap-4 justify-center lg:justify-start mb-8">
-            <div className="flex items-center gap-2 text-white/90">
-              <span className="text-2xl">🧠</span>
-              <span className="text-sm">Machine Learning</span>
+          <div className="mb-8 p-6 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20">
+            <p className="text-white text-lg">
+              <strong>Technology Partner of Bettroi</strong> - Founded by <strong>Dr. Murali BK</strong>, CTO of Bettroi. 100+ successful AI projects delivered.
+            </p>
+          </div>
+
+          <div className="flex flex-wrap gap-6 justify-center lg:justify-start mb-8">
+            <div className="flex items-center gap-3 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-lg text-white/90 border border-white/20">
+              <span className="text-sm font-medium">Machine Learning</span>
             </div>
-            <div className="flex items-center gap-2 text-white/90">
-              <span className="text-2xl">💬</span>
-              <span className="text-sm">NLP & LLMs</span>
+            <div className="flex items-center gap-3 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-lg text-white/90 border border-white/20">
+              <span className="text-sm font-medium">NLP & LLMs</span>
             </div>
-            <div className="flex items-center gap-2 text-white/90">
-              <span className="text-2xl">👁️</span>
-              <span className="text-sm">Computer Vision</span>
+            <div className="flex items-center gap-3 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-lg text-white/90 border border-white/20">
+              <span className="text-sm font-medium">Computer Vision</span>
             </div>
-            <div className="flex items-center gap-2 text-white/90">
-              <span className="text-2xl">🤖</span>
-              <span className="text-sm">AI Agents</span>
+            <div className="flex items-center gap-3 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-lg text-white/90 border border-white/20">
+              <span className="text-sm font-medium">AI Agents</span>
             </div>
           </div>
 
