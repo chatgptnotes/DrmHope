@@ -4,7 +4,7 @@ import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Calendar, Clock, ArrowRight, TrendingUp } from "lucide-react"
+import { Calendar, Clock, ArrowRight, TrendingUp, BookOpen } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
@@ -48,7 +48,10 @@ export default function Blog() {
         <section className="py-16 px-4 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-900 dark:to-purple-950">
           <div className="container mx-auto max-w-6xl">
             <div className="text-center">
-              <Badge className="mb-4 bg-blue-600 text-white">📝 300+ AI Articles & Tutorials</Badge>
+              <Badge className="mb-4 bg-blue-600 text-white flex items-center gap-2 w-fit mx-auto px-4 py-2">
+                <BookOpen className="h-4 w-4" />
+                300+ AI Articles & Tutorials
+              </Badge>
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
                 AI Software Development Blog
               </h1>

@@ -4,7 +4,7 @@ import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { CheckCircle, TrendingUp, Users, Zap, Target, Award } from "lucide-react"
+import { CheckCircle, TrendingUp, Users, Zap, Target, Award, BarChart } from "lucide-react"
 
 export const metadata: Metadata = {
   title: 'AI Project Case Studies | Success Stories & Results',
@@ -181,7 +181,10 @@ export default function CaseStudies() {
         <section className="py-16 px-4 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-900 dark:to-purple-950">
           <div className="container mx-auto max-w-6xl">
             <div className="text-center">
-              <Badge className="mb-4 bg-blue-600 text-white">📊 Success Stories</Badge>
+              <Badge className="mb-4 bg-blue-600 text-white flex items-center gap-2 w-fit mx-auto px-4 py-2">
+                <BarChart className="h-4 w-4" />
+                Success Stories
+              </Badge>
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
                 AI Project Case Studies
               </h1>

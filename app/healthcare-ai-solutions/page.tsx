@@ -140,8 +140,9 @@ export default function HealthcareAISolutions() {
         <section className="py-20 px-4 bg-gradient-to-br from-red-50 via-orange-50 to-yellow-50 dark:from-gray-900 dark:via-red-950 dark:to-gray-900">
           <div className="container mx-auto max-w-6xl">
             <div className="text-center mb-12">
-              <Badge className="mb-4 bg-red-600 text-white hover:bg-red-700">
-                🏥 Healthcare AI Solutions
+              <Badge className="mb-4 bg-red-600 text-white hover:bg-red-700 flex items-center gap-2 w-fit mx-auto px-4 py-2">
+                <Hospital className="h-4 w-4" />
+                Healthcare AI Solutions
               </Badge>
               <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
                 Transform Healthcare with

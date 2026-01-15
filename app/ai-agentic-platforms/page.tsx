@@ -120,8 +120,9 @@ export default function AIAgenticPlatforms() {
         <section className="py-20 px-4 bg-gradient-to-br from-purple-50 via-blue-50 to-cyan-50 dark:from-gray-900 dark:via-blue-950 dark:to-gray-900">
           <div className="container mx-auto max-w-6xl">
             <div className="text-center mb-12">
-              <Badge className="mb-4 bg-purple-600 text-white hover:bg-purple-700">
-                🤖 AI Agentic Platforms
+              <Badge className="mb-4 bg-purple-600 text-white hover:bg-purple-700 flex items-center gap-2 w-fit mx-auto px-4 py-2">
+                <Bot className="h-4 w-4" />
+                AI Agentic Platforms
               </Badge>
               <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
                 Build Intelligent
