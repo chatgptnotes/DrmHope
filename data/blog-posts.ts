@@ -286,7 +286,7 @@ Healthcare AI transformation is not just about technology—it's about improving
   }
 ]
 
-// Generate 97 more blog posts programmatically
+// Generate 200+ more blog posts programmatically
 const additionalCategories = [
   "Machine Learning",
   "Voice AI",
@@ -297,7 +297,17 @@ const additionalCategories = [
   "Education AI",
   "Beauty Tech AI",
   "Data Science",
-  "Cloud Computing"
+  "Cloud Computing",
+  "Deep Learning",
+  "Predictive Analytics",
+  "Conversational AI",
+  "AI Ethics",
+  "Edge AI",
+  "Reinforcement Learning",
+  "Neural Networks",
+  "AI in Finance",
+  "AI in Retail",
+  "AI DevOps"
 ]
 
 const topicTemplates = [
@@ -310,7 +320,12 @@ const topicTemplates = [
   { title: "{category} for Beginners: Getting Started", readTime: "10 min read" },
   { title: "Advanced {category} Techniques for 2025", readTime: "12 min read" },
   { title: "{category} Case Studies and Success Stories", readTime: "11 min read" },
-  { title: "The ROI of {category} Implementation", readTime: "8 min read" }
+  { title: "The ROI of {category} Implementation", readTime: "8 min read" },
+  { title: "{category} Security Best Practices", readTime: "9 min read" },
+  { title: "Building Scalable {category} Solutions", readTime: "10 min read" },
+  { title: "{category} Performance Optimization Guide", readTime: "11 min read" },
+  { title: "Cost-Effective {category} Strategies", readTime: "8 min read" },
+  { title: "{category} Integration Patterns", readTime: "9 min read" }
 ]
 
 // Generate additional posts

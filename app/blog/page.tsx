@@ -8,20 +8,29 @@ import { Calendar, Clock, ArrowRight, TrendingUp } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: 'AI Software Development Blog | 100+ Articles on AI, Healthcare AI & Agentic Platforms',
-  description: '100+ expert articles on AI software development, machine learning, AI agentic systems, healthcare AI, voice AI, industrial IoT, and intelligent automation. Comprehensive tutorials, case studies, and best practices by Dr. Murali BK and DrM Hope team.',
+  title: 'AI Software Development Blog | 300+ Articles on AI, Healthcare AI & Agentic Platforms',
+  description: '300+ expert articles on AI software development, machine learning, deep learning, AI agentic systems, healthcare AI, voice AI, conversational AI, computer vision, NLP, industrial IoT, and intelligent automation. Comprehensive tutorials, case studies, and best practices by Dr. Murali BK and DrM Hope team.',
   keywords: [
     'AI blog',
     'AI software development blog',
     'machine learning tutorials',
+    'deep learning articles',
     'AI articles',
     'healthcare AI blog',
     'AI agentic systems blog',
     'voice AI articles',
+    'conversational AI',
+    'computer vision tutorials',
+    'NLP blog',
     'industrial IoT blog',
     'AI development best practices',
     'AI case studies',
-    '100+ AI articles'
+    '300+ AI articles',
+    'predictive analytics',
+    'neural networks',
+    'reinforcement learning',
+    'edge AI',
+    'AI ethics'
   ]
 }
 
@@ -39,12 +48,12 @@ export default function Blog() {
         <section className="py-16 px-4 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-900 dark:to-purple-950">
           <div className="container mx-auto max-w-6xl">
             <div className="text-center">
-              <Badge className="mb-4 bg-blue-600 text-white">📝 100+ AI Articles & Tutorials</Badge>
+              <Badge className="mb-4 bg-blue-600 text-white">📝 300+ AI Articles & Tutorials</Badge>
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
                 AI Software Development Blog
               </h1>
               <p className="text-xl text-gray-700 dark:text-gray-300 max-w-3xl mx-auto">
-                {blogPosts.length}+ expert articles on AI development, machine learning, healthcare AI, agentic systems, voice AI, industrial IoT, and intelligent automation by Dr. Murali BK and DrM Hope team
+                {blogPosts.length}+ expert articles on AI development, machine learning, deep learning, healthcare AI, agentic systems, voice AI, conversational AI, computer vision, NLP, industrial IoT, and intelligent automation by Dr. Murali BK and DrM Hope team
               </p>
             </div>
           </div>

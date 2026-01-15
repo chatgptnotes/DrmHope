@@ -38,6 +38,12 @@ export function Navbar() {
             Our Projects
           </Link>
           <Link
+            href="/blog"
+            className="text-sm font-medium text-gray-700 dark:text-gray-300 transition-colors hover:text-red-600 dark:hover:text-red-400"
+          >
+            Blog
+          </Link>
+          <Link
             href="/client-success"
             className="text-sm font-medium text-gray-700 dark:text-gray-300 transition-colors hover:text-red-600 dark:hover:text-red-400"
           >
@@ -85,6 +91,13 @@ export function Navbar() {
               onClick={() => setIsMenuOpen(false)}
             >
               Our Projects
+            </Link>
+            <Link
+              href="/blog"
+              className="text-sm font-medium text-gray-700 dark:text-gray-300 transition-colors hover:text-red-600 dark:hover:text-red-400"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Blog
             </Link>
             <Link
               href="/client-success"
