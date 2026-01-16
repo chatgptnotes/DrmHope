@@ -1,20 +1,15 @@
 {
   "redirects": [
     {
-      "source": "/",
-      "destination": "https://www.drmhope.com",
-      "permanent": true
-    },
-    {
-      "source": "/index.html",
-      "destination": "https://www.drmhope.com",
+      "source": "/((?!admin).*)",
+      "destination": "https://www.drmhope.com/$1",
       "permanent": true
     }
   ],
   "rewrites": [
     {
-      "source": "/admin/(.*)",
-      "destination": "/admin/$1"
+      "source": "/admin/:path*",
+      "destination": "/admin/:path*"
     }
   ]
 }
