@@ -356,10 +356,10 @@ export function ContactForm() {
                     </p>
                   </div>
                 </div>
-                <div className="flex gap-3 items-center">
+                {/* <div className="flex gap-3 items-center">
                   <Phone className="h-5 w-5 text-red-600 dark:text-white flex-shrink-0" />
-                  {/* <p className="text-sm text-gray-700 dark:text-gray-300">+91 8412030400</p> */}
-                </div>
+                 <p className="text-sm text-gray-700 dark:text-gray-300">+91 8412030400</p>
+                </div> */}
                 <div className="flex gap-3 items-center">
                   <Mail className="h-5 w-5 text-red-600 dark:text-white flex-shrink-0" />
                   {/* <p className="text-sm text-gray-700 dark:text-gray-300">CMD@HOPEHOSPITAL.COM</p> */}
