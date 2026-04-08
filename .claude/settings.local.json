@@ -30,7 +30,10 @@
       "Bash(vercel ls:*)",
       "Bash(git checkout:*)",
       "Bash(npm view:*)",
-      "Read(//var/folders/55/3h4th4c178ggt8vcy5rq_d480000gn/T/TemporaryItems/NSIRD_screencaptureui_9gkW0c/**)"
+      "Read(//var/folders/55/3h4th4c178ggt8vcy5rq_d480000gn/T/TemporaryItems/NSIRD_screencaptureui_9gkW0c/**)",
+      "Bash(git config:*)",
+      "Bash(gh auth:*)",
+      "Bash(git merge:*)"
     ],
     "deny": [],
     "ask": []
