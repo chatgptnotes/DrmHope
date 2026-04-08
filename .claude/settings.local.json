@@ -33,7 +33,9 @@
       "Read(//var/folders/55/3h4th4c178ggt8vcy5rq_d480000gn/T/TemporaryItems/NSIRD_screencaptureui_9gkW0c/**)",
       "Bash(git config:*)",
       "Bash(gh auth:*)",
-      "Bash(git merge:*)"
+      "Bash(git merge:*)",
+      "Read(//c/Users/hope4/OneDrive/Pictures/**)",
+      "Read(//c/Users/hope4/**)"
     ],
     "deny": [],
     "ask": []
