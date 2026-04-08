@@ -19,7 +19,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/', '/admin/'],
       },
     ],
-    sitemap: 'https://drmhope.com/sitemap.xml',
-    host: 'https://drmhope.com',
+    sitemap: 'https://www.drmhope.com/sitemap.xml',
+    host: 'https://www.drmhope.com',
   }
 }

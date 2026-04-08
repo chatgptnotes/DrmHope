@@ -1,95 +1,16 @@
 "use client"
 
-import { useEffect, useMemo, useState } from "react"
+import Image from "next/image"
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { EffectCards, Autoplay } from "swiper/modules"
-import Particles, { initParticlesEngine } from "@tsparticles/react"
-import { loadSlim } from "@tsparticles/slim"
-import type { ISourceOptions } from "@tsparticles/engine"
 
 import "swiper/css"
 import "swiper/css/effect-cards"
 
 export function HeroSection() {
-  const [init, setInit] = useState(false)
-
-  useEffect(() => {
-    initParticlesEngine(async (engine) => {
-      await loadSlim(engine)
-    }).then(() => {
-      setInit(true)
-    })
-  }, [])
-
-  const particlesOptions: ISourceOptions = useMemo(
-    () => ({
-      background: {
-        color: {
-          value: "transparent",
-        },
-      },
-      fpsLimit: 120,
-      interactivity: {
-        events: {
-          onClick: {
-            enable: false,
-          },
-          onHover: {
-            enable: true,
-            mode: "repulse",
-          },
-        },
-        modes: {
-          repulse: {
-            distance: 100,
-            duration: 0.4,
-          },
-        },
-      },
-      particles: {
-        color: {
-          value: "#ffffff",
-        },
-        links: {
-          color: "#ffffff",
-          distance: 150,
-          enable: true,
-          opacity: 0.3,
-          width: 1,
-        },
-        move: {
-          direction: "none",
-          enable: true,
-          outModes: {
-            default: "bounce",
-          },
-          random: false,
-          speed: 1,
-          straight: false,
-        },
-        number: {
-          density: {
-            enable: true,
-          },
-          value: 80,
-        },
-        opacity: {
-          value: 0.5,
-        },
-        shape: {
-          type: "circle",
-        },
-        size: {
-          value: { min: 1, max: 3 },
-        },
-      },
-      detectRetina: true,
-    }),
-    []
-  )
-
   const industries = [
     {
       title: "AI-Powered Healthcare",
@@ -100,54 +21,37 @@ export function HeroSection() {
     {
       title: "AI Agentic Platforms",
       description: "Intelligent AI agents for automation, voice AI systems, and AI-powered sales platforms.",
-      image: "/images/pexels-markusspiske-225769.jpg",
+      image: "/images/analytics-dashboard.jpg",
       color: "#009CB3"
     },
     {
       title: "Machine Learning Solutions",
       description: "Computer vision, NLP, predictive analytics, and deep learning platforms for enterprise AI.",
-      image: "/images/pexels-markusspiske-225769.jpg",
+      image: "/images/hero-dashboard.jpg",
       color: "#6f7aa6"
     },
     {
       title: "Generative AI Platforms",
       description: "AI software development with LLMs, AI chatbots, and intelligent automation systems.",
-      image: "/images/pexels-markusspiske-225769.jpg",
+      image: "/images/mobile-app.jpg",
       color: "#FD5F07"
     },
   ]
 
   return (
     <section
-      className="relative min-h-screen flex items-center overflow-hidden py-20 px-4 md:px-16"
-      style={{
-        background: "#0a0a0a",
-        backgroundImage: `radial-gradient(
-          circle at 20% 100%,
-          rgba(184, 184, 184, 0.1) 0%,
-          rgba(184, 184, 184, 0.1) 33%,
-          rgba(96, 96, 96, 0.1) 33%,
-          rgba(96, 96, 96, 0.1) 66%,
-          rgba(7, 7, 7, 0.1) 66%,
-          rgba(7, 7, 7, 0.1) 99%
-        ),
-        linear-gradient(40deg, #009CB3, #1a1a1a, #991b1b, #dc2626, #DC143C)`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-      }}
+      className="relative min-h-screen flex items-center overflow-hidden py-20 px-4 sm:px-6 md:px-8 lg:px-16 hero-gradient"
     >
-      {/* Particles Background */}
-      {init && (
-        <div className="absolute inset-0">
-          <Particles options={particlesOptions} />
-        </div>
-      )}
+      {/* Lightweight CSS Particles Background */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="hero-particles" />
+      </div>
 
       {/* Content Grid */}
-      <div className="container relative z-10 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center max-w-7xl">
+      <div className="container relative z-10 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-16 items-center max-w-7xl">
         {/* Left Content */}
         <div className="max-w-2xl text-center lg:text-left order-2 lg:order-1">
-          <div className="inline-block mb-6 px-6 py-3 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
+          <div className="inline-block mb-6 px-6 py-3 bg-white/20 rounded-full border border-white/20">
             <span className="text-white text-base font-medium">DrM Hope - Better Technology</span>
           </div>
 
@@ -159,43 +63,49 @@ export function HeroSection() {
           </h1>
 
           <p className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed">
-            We leverage AI Services and advanced automation to align technology with your business goals. Our solutions ensure seamless adoption, enhanced customer experiences, and sustained growth in a fast-changing market.
+            We leverage <strong>AI services</strong> and advanced <strong>intelligent automation</strong> to align technology with your business goals. Our solutions ensure seamless adoption, enhanced customer experiences, and sustained growth in a fast-changing market.
           </p>
 
-          <div className="mb-8 p-6 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20">
+          <div className="mb-8 p-6 bg-white/20 rounded-xl border border-white/20">
             <p className="text-white text-lg">
               <strong>Technology Partner of Bettroi</strong> - Founded by <strong>Dr. Murali BK</strong>, CTO of Bettroi. 100+ successful AI projects delivered.
             </p>
           </div>
 
-          <div className="flex flex-wrap gap-6 justify-center lg:justify-start mb-8">
-            <div className="flex items-center gap-3 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-lg text-white/90 border border-white/20">
+          <div className="flex flex-wrap gap-3 sm:gap-4 lg:gap-6 justify-center lg:justify-start mb-8">
+            <div className="flex items-center gap-3 px-4 py-2 bg-white/20 rounded-lg text-white/90 border border-white/20">
               <span className="text-sm font-medium">Machine Learning</span>
             </div>
-            <div className="flex items-center gap-3 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-lg text-white/90 border border-white/20">
+            <div className="flex items-center gap-3 px-4 py-2 bg-white/20 rounded-lg text-white/90 border border-white/20">
               <span className="text-sm font-medium">NLP & LLMs</span>
             </div>
-            <div className="flex items-center gap-3 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-lg text-white/90 border border-white/20">
+            <div className="flex items-center gap-3 px-4 py-2 bg-white/20 rounded-lg text-white/90 border border-white/20">
               <span className="text-sm font-medium">Computer Vision</span>
             </div>
-            <div className="flex items-center gap-3 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-lg text-white/90 border border-white/20">
+            <div className="flex items-center gap-3 px-4 py-2 bg-white/20 rounded-lg text-white/90 border border-white/20">
               <span className="text-sm font-medium">AI Agents</span>
             </div>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <Button
+              asChild
               size="lg"
               className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-300 hover:scale-105 shadow-lg border-0"
             >
-              Explore AI Solutions
-              <ArrowRight className="ml-2 h-5 w-5" />
+              <Link href="/solutions">
+                Explore AI Solutions
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
             </Button>
             <Button
+              asChild
               size="lg"
-              className="bg-white/10 backdrop-blur-sm border-2 border-white hover:bg-white hover:text-gray-900 text-white px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-300 hover:scale-105 shadow-lg"
+              className="bg-white/20 border-2 border-white hover:bg-white hover:text-gray-900 text-white px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-300 hover:scale-105 shadow-lg"
             >
-              View AI Projects
+              <Link href="/projects">
+                View AI Projects
+              </Link>
             </Button>
           </div>
         </div>
@@ -206,45 +116,39 @@ export function HeroSection() {
             effect="cards"
             grabCursor={true}
             modules={[EffectCards, Autoplay]}
-            className="w-full h-[350px] sm:h-[400px] md:h-[450px] lg:h-[490px]"
+            className="w-full h-[280px] sm:h-[350px] md:h-[400px] lg:h-[490px]"
             autoplay={{
-              delay: 3000,
-              disableOnInteraction: false,
+              delay: 5000,
+              disableOnInteraction: true,
+              pauseOnMouseEnter: true,
             }}
             loop={true}
           >
             {industries.map((industry, index) => (
               <SwiperSlide
                 key={index}
-                className="rounded-[20px] border border-white/30 overflow-hidden bg-cover bg-center"
-                style={{ backgroundImage: `url(${industry.image})` }}
+                className="rounded-[20px] border border-white/30 overflow-hidden"
               >
                 <div className="relative w-full h-full">
-                  <img
+                  <Image
                     src={industry.image}
                     alt={industry.title}
-                    className="w-full h-full object-cover"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 450px"
+                    className="object-cover"
+                    priority={index === 0}
                   />
 
                   {/* Cost Badge */}
                   <div
-                    className="absolute top-2 right-2 px-3 py-1.5 rounded-full text-sm font-semibold"
-                    style={{
-                      background: "rgba(255, 255, 255, 0.3)",
-                      backdropFilter: "blur(6px)",
-                      color: index < 2 ? "#fff" : "#202134",
-                    }}
+                    className={`absolute top-2 right-2 px-3 py-1.5 rounded-full text-sm font-semibold glass-light ${index < 2 ? 'text-white' : 'text-gray-800'}`}
                   >
                     Enterprise Ready
                   </div>
 
                   {/* Overlay */}
                   <div
-                    className="absolute bottom-0 left-0 right-0 p-5 h-[150px] flex flex-col justify-center rounded-b-[20px] border-t border-white/30"
-                    style={{
-                      background: "rgba(93, 95, 145, 0.2)",
-                      backdropFilter: "blur(20px)",
-                    }}
+                    className="absolute bottom-0 left-0 right-0 p-5 h-[120px] sm:h-[150px] flex flex-col justify-center rounded-b-[20px] border-t border-white/30 glass-overlay"
                   >
                     <h3 className="text-xl font-semibold text-white mb-2">
                       {industry.title}

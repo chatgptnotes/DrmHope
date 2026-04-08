@@ -7,8 +7,11 @@ import { Badge } from "@/components/ui/badge"
 import { CheckCircle, Hospital, Brain, FileText, Activity, Users, Shield, Zap, Clock } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: 'Healthcare AI Solutions | AI-Powered Hospital Management & Medical Software',
-  description: 'Transform healthcare with AI-powered solutions. Hospital information systems, NLP medical records, predictive diagnostics, AI-assisted diagnosis, and intelligent automation for healthcare.',
+  alternates: {
+    canonical: 'https://www.drmhope.com/healthcare-ai-solutions',
+  },
+  title: 'Healthcare AI Solutions | Hospital Management',
+  description: 'AI-powered healthcare solutions: hospital information systems, NLP medical records, predictive diagnostics, and AI-assisted diagnosis for hospitals.',
   keywords: [
     'healthcare AI solutions',
     'AI healthcare software',
@@ -26,7 +29,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Healthcare AI Solutions | AI-Powered Medical Software',
     description: 'Revolutionary AI healthcare solutions - Hospital management, NLP medical records, and predictive diagnostics',
+    url: 'https://www.drmhope.com/healthcare-ai-solutions',
     type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Healthcare AI Solutions | Hospital Management',
+    description: 'AI-powered hospital management, NLP medical records, and predictive diagnostics',
   }
 }
 

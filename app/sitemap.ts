@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 import { blogPosts } from '@/data/blog-posts'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://drmhope.com'
+  const baseUrl = 'https://www.drmhope.com'
   const currentDate = new Date()
 
   // Homepage - Highest priority
@@ -81,12 +81,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/case-studies`,
       lastModified: currentDate,
       changeFrequency: 'monthly' as const,
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog`,
-      lastModified: currentDate,
-      changeFrequency: 'weekly' as const,
       priority: 0.7,
     },
   ]

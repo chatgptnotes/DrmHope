@@ -5,7 +5,7 @@ export function AboutUs() {
     <section id="about" className="py-16 bg-gradient-to-b from-white to-red-50 dark:from-gray-950 dark:to-red-950/50">
       <div className="container mx-auto px-4">
         <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
-          <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-5xl text-red-700 dark:text-white">
+          <h2 className="font-heading text-2xl leading-[1.1] sm:text-3xl md:text-4xl lg:text-5xl text-red-700 dark:text-white">
             About DRM HOPE Software
           </h2>
           <p className="max-w-[85%] leading-normal text-gray-700 dark:text-gray-300 sm:text-lg sm:leading-7">

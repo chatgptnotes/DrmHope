@@ -1,5 +1,4 @@
-"use client"
-
+import Image from "next/image"
 import { Brain, Users, Rocket, Shield } from "lucide-react"
 
 export function AdvantageSection() {
@@ -8,21 +7,25 @@ export function AdvantageSection() {
       <div className="container mx-auto max-w-7xl">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            The DrM Hope Advantage
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+            Why Choose DrM Hope for AI Development
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto leading-relaxed">
-            At DrM Hope, we trust in <strong className="text-red-600">DATA</strong> and follow a <strong className="text-red-600">Human + AI</strong> approach to drive real impact. We start by deeply understanding your business, analyzing data, technology, systems, and processes to identify opportunities for AI-powered improvement.
+            At DrM Hope, we trust in <strong className="text-red-600">DATA</strong> and follow a <strong className="text-red-600">Human + AI</strong> approach to drive real impact. Our AI software development consulting starts by analyzing your data, systems, and processes to identify opportunities for machine learning, NLP, and intelligent automation.
           </p>
         </div>
 
         {/* Main Content with Image */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+        <div className="grid lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center mb-16">
           <div>
-            <img
+            <Image
               src="/images/pexels-markusspiske-225769.jpg"
-              alt="Business Process Automation"
-              className="rounded-2xl shadow-2xl w-full"
+              alt="AI software development and business process automation"
+              width={600}
+              height={400}
+              className="rounded-2xl shadow-2xl w-full h-auto"
+              loading="lazy"
+              sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>
           <div>
@@ -30,25 +33,25 @@ export function AdvantageSection() {
               AI-Powered Software Development
             </h3>
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-              Through collaborative prioritization, we ensure our AI technology solutions align with your goals and maximize ROI. By optimizing operations and enhancing customer experiences, we turn satisfaction into sustainable profitability.
+              Through collaborative prioritization, we ensure our <strong>AI technology solutions</strong> align with your goals and maximize ROI. By optimizing operations and enhancing customer experiences, we turn satisfaction into sustainable profitability.
             </p>
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-              We balance human intelligence with AI-driven insights for measurable success, delivering 100+ successful projects across healthcare, business automation, and enterprise AI solutions.
+              We balance human intelligence with AI-driven insights for measurable success, delivering <strong>100+ successful projects</strong> across <strong>healthcare AI</strong>, business automation, and <strong>enterprise AI solutions</strong>.
             </p>
           </div>
         </div>
 
         {/* Feature Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="text-center p-8 bg-gradient-to-br from-blue-50 to-white dark:from-gray-900 dark:to-gray-950 rounded-xl border-2 border-gray-100 dark:border-gray-800 hover:border-red-600 transition-all duration-300 hover:shadow-xl">
             <div className="mb-4 w-16 h-16 bg-red-100 dark:bg-red-900/30 rounded-full flex items-center justify-center mx-auto">
               <Brain className="h-8 w-8 text-red-600 dark:text-red-400" />
             </div>
             <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
-              Customized AI Solutions
+              Custom AI Development
             </h4>
             <p className="text-gray-600 dark:text-gray-400">
-              We tailor our AI strategies to your specific needs, ensuring the best fit and highest impact for your business.
+              We build custom AI solutions tailored to your business, from healthcare AI systems to enterprise automation platforms.
             </p>
           </div>
 
@@ -57,10 +60,10 @@ export function AdvantageSection() {
               <Users className="h-8 w-8 text-red-600 dark:text-red-400" />
             </div>
             <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
-              Expert Guidance
+              AI Consulting & Guidance
             </h4>
             <p className="text-gray-600 dark:text-gray-400">
-              Our team of AI experts guides you every step of the way, from concept to deployment and beyond.
+              Our AI consulting team guides you from concept to deployment — machine learning, NLP, computer vision, and AI agentic systems.
             </p>
           </div>
 
@@ -69,10 +72,10 @@ export function AdvantageSection() {
               <Rocket className="h-8 w-8 text-red-600 dark:text-red-400" />
             </div>
             <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
-              Long-Term Success
+              Scalable AI Platforms
             </h4>
             <p className="text-gray-600 dark:text-gray-400">
-              Commitment to sustained growth with continuous optimization and AI model improvements.
+              We build scalable AI platforms with continuous optimization, from generative AI to predictive analytics and intelligent automation.
             </p>
           </div>
 
@@ -81,10 +84,10 @@ export function AdvantageSection() {
               <Shield className="h-8 w-8 text-red-600 dark:text-red-400" />
             </div>
             <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
-              Proven Track Record
+              100+ AI Projects Delivered
             </h4>
             <p className="text-gray-600 dark:text-gray-400">
-              100+ successful AI projects delivered with 98% client satisfaction rate.
+              Proven track record across healthcare AI, enterprise software development, and AI agentic platforms with 98% client satisfaction.
             </p>
           </div>
         </div>

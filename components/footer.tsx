@@ -1,101 +1,125 @@
 import Link from "next/link"
 import { Logo } from "@/components/logo"
+import { Facebook, Instagram, Youtube, Linkedin, Twitter } from "lucide-react"
 
 export function Footer() {
   return (
     <footer className="border-t border-primary-100 dark:border-primary-900 bg-white dark:bg-gray-950">
       <div className="container flex flex-col gap-8 py-8 md:py-12 lg:py-16">
-        <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-4">
+        <div className="grid gap-6 sm:gap-8 sm:grid-cols-2 md:grid-cols-4">
           <div className="space-y-4">
             <Logo />
             <p className="text-sm text-secondary-600 dark:text-secondary-400">
-              Advanced hospital management software solutions for healthcare facilities worldwide.
+              AI-driven software development and consulting. Technology partner of Bettroi.
             </p>
+            <address className="not-italic text-sm text-secondary-600 dark:text-secondary-400 space-y-1">
+              <p>701, Casa Royal Apartment, Mohan Nagar</p>
+              <p>Nagpur, Maharashtra 440001, India</p>
+              <p><a href="tel:+918412030400" className="hover:text-primary-600 dark:hover:text-primary-400">+91 8412030400</a></p>
+              <p><a href="mailto:info@drmhope.com" className="hover:text-primary-600 dark:hover:text-primary-400">info@drmhope.com</a></p>
+            </address>
+            <div className="flex gap-3 pt-2">
+              <Link href="https://www.facebook.com/drmhope" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-secondary-500 hover:text-primary-600 dark:hover:text-primary-400 p-3">
+                <Facebook className="h-5 w-5" />
+              </Link>
+              <Link href="https://www.instagram.com/drmhope" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-secondary-500 hover:text-primary-600 dark:hover:text-primary-400 p-3">
+                <Instagram className="h-5 w-5" />
+              </Link>
+              <Link href="https://www.youtube.com/@drmhope" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="text-secondary-500 hover:text-primary-600 dark:hover:text-primary-400 p-3">
+                <Youtube className="h-5 w-5" />
+              </Link>
+              <Link href="https://www.linkedin.com/company/drmhope" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-secondary-500 hover:text-primary-600 dark:hover:text-primary-400 p-3">
+                <Linkedin className="h-5 w-5" />
+              </Link>
+              <Link href="https://twitter.com/drmhope" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" className="text-secondary-500 hover:text-primary-600 dark:hover:text-primary-400 p-3">
+                <Twitter className="h-5 w-5" />
+              </Link>
+            </div>
           </div>
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-primary-700 dark:text-primary-300">Solutions</h3>
-            <ul className="space-y-2 text-sm">
+            <h3 className="text-lg font-semibold text-primary-700 dark:text-primary-300">AI Solutions</h3>
+            <ul className="space-y-1 text-sm">
               <li>
                 <Link
-                  href="#"
-                  className="text-secondary-600 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-primary-400"
+                  href="/ai-software-development"
+                  className="text-secondary-600 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-primary-400 py-1.5 inline-block"
                 >
-                  Patient Management
+                  AI Software Development
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
-                  className="text-secondary-600 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-primary-400"
+                  href="/healthcare-ai-solutions"
+                  className="text-secondary-600 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-primary-400 py-1.5 inline-block"
                 >
-                  Electronic Health Records
+                  Healthcare AI Solutions
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
-                  className="text-secondary-600 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-primary-400"
+                  href="/ai-agentic-platforms"
+                  className="text-secondary-600 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-primary-400 py-1.5 inline-block"
                 >
-                  Billing & Insurance
+                  AI Agentic Platforms
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
-                  className="text-secondary-600 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-primary-400"
+                  href="/services"
+                  className="text-secondary-600 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-primary-400 py-1.5 inline-block"
                 >
-                  Pharmacy Management
+                  Machine Learning & NLP
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
-                  className="text-secondary-600 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-primary-400"
+                  href="/solutions"
+                  className="text-secondary-600 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-primary-400 py-1.5 inline-block"
                 >
-                  Laboratory Information
+                  Enterprise AI Consulting
                 </Link>
               </li>
             </ul>
           </div>
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-primary-700 dark:text-primary-300">Company</h3>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-1 text-sm">
               <li>
                 <Link
-                  href="#"
-                  className="text-secondary-600 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-primary-400"
+                  href="/about"
+                  className="text-secondary-600 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-primary-400 py-2 inline-block"
                 >
-                  About Us
+                  About DrM Hope
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
-                  className="text-secondary-600 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-primary-400"
+                  href="/contact"
+                  className="text-secondary-600 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-primary-400 py-2 inline-block"
                 >
                   Careers
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
-                  className="text-secondary-600 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-primary-400"
+                  href="/blog"
+                  className="text-secondary-600 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-primary-400 py-2 inline-block"
                 >
                   Blog
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
-                  className="text-secondary-600 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-primary-400"
+                  href="/client-success"
+                  className="text-secondary-600 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-primary-400 py-2 inline-block"
                 >
-                  Press
+                  Client Success
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
-                  className="text-secondary-600 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-primary-400"
+                  href="/contact"
+                  className="text-secondary-600 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-primary-400 py-2 inline-block"
                 >
                   Contact
                 </Link>
@@ -104,45 +128,45 @@ export function Footer() {
           </div>
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-primary-700 dark:text-primary-300">Resources</h3>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-1 text-sm">
               <li>
                 <Link
-                  href="#"
-                  className="text-secondary-600 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-primary-400"
+                  href="/blog"
+                  className="text-secondary-600 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-primary-400 py-1.5 inline-block"
                 >
-                  Documentation
+                  AI Development Blog
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
-                  className="text-secondary-600 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-primary-400"
+                  href="/case-studies"
+                  className="text-secondary-600 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-primary-400 py-1.5 inline-block"
                 >
-                  Help Center
+                  AI Case Studies
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
-                  className="text-secondary-600 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-primary-400"
+                  href="/client-success"
+                  className="text-secondary-600 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-primary-400 py-1.5 inline-block"
                 >
-                  Training
+                  Client Success Stories
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
-                  className="text-secondary-600 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-primary-400"
+                  href="/projects"
+                  className="text-secondary-600 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-primary-400 py-1.5 inline-block"
                 >
-                  Webinars
+                  AI Project Portfolio
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
-                  className="text-secondary-600 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-primary-400"
+                  href="/contact"
+                  className="text-secondary-600 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-primary-400 py-1.5 inline-block"
                 >
-                  Case Studies
+                  Free AI Consultation
                 </Link>
               </li>
             </ul>
@@ -170,7 +194,7 @@ export function Footer() {
               </div>
             </div>
             <div className="text-sm text-secondary-600 dark:text-secondary-400 sm:border-l sm:border-primary-100 dark:sm:border-primary-900 sm:pl-4">
-              DRM Hope Software is the technology development partner of Bettroi, providing innovative software solutions and engineering expertise.
+              DrM Hope is the AI software development and technology partner of Bettroi, delivering machine learning, NLP, and custom AI solutions.
             </div>
           </div>
         </div>
@@ -181,20 +205,20 @@ export function Footer() {
           </p>
           <div className="flex gap-4">
             <Link
-              href="#"
-              className="text-sm text-secondary-600 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-primary-400"
+              href="/privacy-policy"
+              className="text-sm text-secondary-600 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-primary-400 py-2 inline-block"
             >
               Privacy Policy
             </Link>
             <Link
-              href="#"
-              className="text-sm text-secondary-600 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-primary-400"
+              href="/terms-of-service"
+              className="text-sm text-secondary-600 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-primary-400 py-2 inline-block"
             >
               Terms of Service
             </Link>
             <Link
-              href="#"
-              className="text-sm text-secondary-600 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-primary-400"
+              href="/cookie-policy"
+              className="text-sm text-secondary-600 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-primary-400 py-2 inline-block"
             >
               Cookie Policy
             </Link>

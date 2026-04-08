@@ -1,5 +1,4 @@
-"use client"
-
+import Image from "next/image"
 import { Code, Sparkles, Brain } from "lucide-react"
 import Link from "next/link"
 
@@ -7,8 +6,8 @@ export function ImagineCards() {
   const cards = [
     {
       icon: Code,
-      title: "AI Solutions",
-      subtitle: "Enterprise AI Integration",
+      title: "Enterprise AI Solutions",
+      subtitle: "AI-Powered Business Integration",
       items: [
         "web solutions using AI",
         "AI integration in your existing project",
@@ -20,7 +19,7 @@ export function ImagineCards() {
     },
     {
       icon: Sparkles,
-      title: "AI/ML/Gen Generative AI",
+      title: "Generative AI & Machine Learning",
       subtitle: "Intelligent automation solutions",
       items: [
         "Machine Learning Models",
@@ -33,7 +32,7 @@ export function ImagineCards() {
     },
     {
       icon: Brain,
-      title: "Digital Mastering B2B",
+      title: "B2B Digital Transformation",
       subtitle: "Enterprise digital transformation",
       items: [
         "B2B Platform Development",
@@ -49,38 +48,34 @@ export function ImagineCards() {
   return (
     <section
       className="relative min-h-[70vh] flex items-center justify-center py-20 overflow-hidden"
-      style={{
-        backgroundImage: 'url(/Homepage-Theme-Engineer-Banner.jpg)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      }}
     >
+      <Image
+        src="/Homepage-Theme-Engineer-Banner.jpg"
+        alt="AI software development team building enterprise solutions"
+        fill
+        sizes="100vw"
+        className="object-cover"
+        loading="lazy"
+        quality={75}
+      />
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/60" />
 
       {/* Red Tech Pattern Overlay */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `
-            linear-gradient(90deg, #ff0000 1px, transparent 1px),
-            linear-gradient(0deg, #ff0000 1px, transparent 1px)
-          `,
-          backgroundSize: '50px 50px',
-          backgroundPosition: '0 0'
-        }} />
+        <div className="absolute inset-0 grid-pattern-red" />
       </div>
 
       {/* Content */}
       <div className="container relative z-10 mx-auto px-4">
         {/* Heading */}
         <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4">
-            We imagine.
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+            AI Software Solutions for Enterprise Growth
           </h2>
           <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto">
-            Through cloud, AI, and data engineering, we help companies design the right operating
-            models to meet digital consumer expectations and accelerate your growth
+            Through <strong>AI software development</strong>, machine learning, and data engineering, we help enterprises
+            design intelligent solutions that accelerate growth and <strong>digital transformation</strong>
           </p>
         </div>
 
@@ -102,7 +97,7 @@ export function ImagineCards() {
                       strokeWidth={1.5}
                     />
                     <div>
-                      <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100">
+                      <h3 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-gray-100">
                         {card.title}
                       </h3>
                       <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
@@ -116,7 +111,7 @@ export function ImagineCards() {
                     {card.items.map((item, itemIndex) => (
                       <li
                         key={itemIndex}
-                        className="flex items-start text-gray-700 dark:text-gray-300 text-sm"
+                        className="flex items-start text-gray-700 dark:text-gray-300 text-sm sm:text-base"
                       >
                         <span className={`inline-block w-1.5 h-1.5 rounded-full ${card.borderColor.replace('border-l-', 'bg-')} mt-2 mr-2 flex-shrink-0`} />
                         <span>{item}</span>

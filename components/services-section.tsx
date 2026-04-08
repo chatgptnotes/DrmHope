@@ -342,7 +342,7 @@ export function ServicesSection() {
             <Sparkles className="h-4 w-4 mr-2 inline" />
             AI-Powered Innovation
           </Badge>
-          <h1 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl text-red-700 dark:text-white">
+          <h1 className="font-heading text-2xl leading-[1.1] sm:text-3xl md:text-4xl lg:text-5xl text-red-700 dark:text-white">
             Our Services
           </h1>
           <p className="max-w-[85%] leading-normal text-gray-700 dark:text-gray-300 sm:text-lg sm:leading-7">
@@ -361,15 +361,15 @@ export function ServicesSection() {
               if (service) setSelectedService(service)
             }}
           >
-            <TabsList className="grid w-full grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 bg-red-100 dark:bg-red-900 mb-8 h-auto p-2">
+            <TabsList className="grid w-full grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 bg-red-100 dark:bg-red-900 mb-8 h-auto p-2">
               {services.map((service) => (
                 <TabsTrigger
                   key={service.id}
                   value={service.id}
-                  className="data-[state=active]:bg-white dark:data-[state=active]:bg-gray-950 data-[state=active]:text-red-700 dark:data-[state=active]:text-red-300 py-3 px-2 flex flex-col items-center gap-2 min-h-[80px]"
+                  className="data-[state=active]:bg-white dark:data-[state=active]:bg-gray-950 data-[state=active]:text-red-700 dark:data-[state=active]:text-red-300 py-3 px-2 flex flex-col items-center gap-2 min-h-[60px] sm:min-h-[70px] md:min-h-[80px]"
                 >
                   <service.icon className="h-5 w-5 flex-shrink-0" />
-                  <span className="text-xs md:text-sm text-center leading-tight whitespace-normal break-words">{service.shortTitle}</span>
+                  <span className="text-xs sm:text-sm text-center leading-tight whitespace-normal break-words">{service.shortTitle}</span>
                 </TabsTrigger>
               ))}
             </TabsList>
@@ -511,7 +511,7 @@ export function ServicesSection() {
               We leverage cutting-edge technologies to build robust, scalable, and secure AI-powered solutions
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {techStack.map((category, index) => (
               <Card key={index} className="border-red-100 dark:border-red-900">
                 <CardHeader>
@@ -545,7 +545,7 @@ export function ServicesSection() {
               A proven methodology that ensures successful AI project delivery
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
                 step: "01",
@@ -584,7 +584,7 @@ export function ServicesSection() {
         </div>
 
         {/* Why Choose Us */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-16">
           {[
             {
               icon: Brain,

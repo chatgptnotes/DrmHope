@@ -1,15 +1,22 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import './globals.css'
 import { ThemeProvider } from '@/components/theme-provider'
 import { StructuredData } from '@/components/structured-data'
+import { GoogleAnalytics } from '@next/third-parties/google'
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+}
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://drmhope.com'),
+  metadataBase: new URL('https://www.drmhope.com'),
   title: {
-    default: 'DrM Hope - Better Technology | AI Driven Software Development & Technical Consulting',
-    template: '%s | DrM Hope - Better Technology'
+    default: 'DrM Hope | AI Software Development & Consulting',
+    template: '%s | DrM Hope'
   },
-  description: 'AI-driven software development and technical consulting company. We leverage AI services and advanced automation to align technology with your business goals. Technology partner of Bettroi, founded by Dr. Murali BK (CTO of Bettroi). 100+ successful AI projects in healthcare, business automation, and enterprise solutions. Seamless adoption, enhanced customer experiences, and sustained growth.',
+  description: 'AI software development by Dr. Murali BK. 100+ projects in healthcare, automation, and enterprise AI. Technology partner of Bettroi.',
   keywords: [
     // Core AI Services
     'AI software development company',
@@ -73,14 +80,14 @@ export const metadata: Metadata = {
     'surgeon who codes',
     'healthcare software developer'
   ],
-  authors: [{ name: 'Dr. B.K. Murali', url: 'https://drmhope.com' }],
+  authors: [{ name: 'Dr. B.K. Murali', url: 'https://www.drmhope.com' }],
   creator: 'DrM Hope Softwares',
   publisher: 'DrM Hope',
   applicationName: 'DrM Hope AI Platform',
   openGraph: {
-    title: 'DrM Hope - Better Technology | AI Driven Software Development & Consulting',
-    description: 'AI-driven software development and technical consulting. We leverage AI services and advanced automation to align technology with your business goals. Technology partner of Bettroi. Founded by Dr. Murali BK, CTO of Bettroi. 100+ successful AI projects.',
-    url: 'https://drmhope.com',
+    title: 'DrM Hope | AI Software Development & Consulting',
+    description: 'AI software development by Dr. Murali BK. 100+ projects in healthcare, automation, and enterprise AI. Technology partner of Bettroi.',
+    url: 'https://www.drmhope.com',
     siteName: 'DrM Hope - Better Technology',
     images: [
       {
@@ -93,13 +100,12 @@ export const metadata: Metadata = {
     locale: 'en_US',
     type: 'website',
     emails: ['info@drmhope.com'],
-    phoneNumbers: ['+91-712-XXXXXXX'],
     countryName: 'India',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'DrM Hope - AI Software Development Company | 100+ AI Projects',
-    description: 'Top-rated AI software company by Dr. Murali BK. Healthcare AI, Agentic Platforms, Voice AI, Industrial IoT. Technology partner of Bettroi.',
+    title: 'DrM Hope | AI Software Development Company',
+    description: 'AI software company by Dr. Murali BK. Healthcare AI, agentic platforms, voice AI, and industrial IoT. Technology partner of Bettroi.',
     images: ['/images/1631365238387.jpeg'],
     creator: '@drmhope',
     site: '@drmhope',
@@ -117,9 +123,12 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: '/images/1631365238387.jpeg',
-    shortcut: '/images/1631365238387.jpeg',
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
     apple: '/images/1631365238387.jpeg',
+  },
+  alternates: {
+    canonical: 'https://www.drmhope.com',
   },
   manifest: '/manifest.json',
   category: 'technology',
@@ -134,18 +143,26 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <StructuredData />
       </head>
       <body>
+        <a href="#main-content" className="skip-to-content">Skip to main content</a>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <div id="main-content">
+            {children}
+          </div>
         </ThemeProvider>
       </body>
+      {process.env.NEXT_PUBLIC_GA_ID && (
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
+      )}
     </html>
   )
 }

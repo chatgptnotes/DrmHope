@@ -286,7 +286,7 @@ Healthcare AI transformation is not just about technology—it's about improving
   }
 ]
 
-// Generate 200+ more blog posts programmatically
+// Generate additional blog post metadata (content generated lazily on access)
 const additionalCategories = [
   "Machine Learning",
   "Voice AI",
@@ -340,7 +340,29 @@ additionalCategories.forEach(category => {
       slug,
       title,
       excerpt: `Comprehensive guide to ${category} covering implementation strategies, best practices, and real-world applications in modern business environments.`,
-      content: `
+      content: "", // Content generated lazily via generatePostContent()
+      category,
+      tags: [category, "Implementation", "Best Practices", "Business Strategy"],
+      author: postId % 3 === 0 ? "Dr. Murali BK" : postId % 2 === 0 ? "DrM Hope Tech Team" : "AI Research Team",
+      publishDate: `2025-01-${String(Math.max(1, 20 - Math.floor(postId / 5))).padStart(2, "0")}`,
+      readTime: template.readTime,
+      featured: postId <= 10,
+      seoKeywords: [
+        category.toLowerCase(),
+        `${category.toLowerCase()} implementation`,
+        `${category.toLowerCase()} guide`,
+        "AI software development",
+        "business automation"
+      ]
+    })
+
+    postId++
+  })
+})
+
+// Generate content only when a specific post is accessed
+function generatePostContent(title: string, category: string): string {
+  return `
 # ${title}
 
 ${category} is transforming the way businesses operate in 2025. This comprehensive guide explores the latest developments, implementation strategies, and best practices.
@@ -479,36 +501,31 @@ The key to success lies in careful planning, user-centric design, and continuous
 Ready to implement ${category} in your organization? Contact DrM Hope for a free consultation and discover how our AI-powered solutions can transform your business.
 
 **Keywords**: ${category}, AI implementation, business automation, digital transformation, ${category.toLowerCase()} best practices, AI software development
-      `,
-      category,
-      tags: [category, "Implementation", "Best Practices", "Business Strategy"],
-      author: postId % 3 === 0 ? "Dr. Murali BK" : postId % 2 === 0 ? "DrM Hope Tech Team" : "AI Research Team",
-      publishDate: `2025-01-${String(Math.max(1, 20 - Math.floor(postId / 5))).padStart(2, "0")}`,
-      readTime: template.readTime,
-      featured: postId <= 10,
-      seoKeywords: [
-        category.toLowerCase(),
-        `${category.toLowerCase()} implementation`,
-        `${category.toLowerCase()} guide`,
-        "AI software development",
-        "business automation"
-      ]
-    })
+  `
+}
 
-    postId++
-  })
-})
+export type BlogPostSummary = Omit<BlogPost, 'content'>
+
+export const getBlogPostSummaries = (): BlogPostSummary[] => {
+  return blogPosts.map(({ content, ...rest }) => rest)
+}
 
 export const getBlogPostBySlug = (slug: string): BlogPost | undefined => {
-  return blogPosts.find(post => post.slug === slug)
+  const post = blogPosts.find(post => post.slug === slug)
+  if (!post) return undefined
+  // Lazily generate content for programmatic posts (id >= 4 with empty content)
+  if (!post.content && parseInt(post.id) >= 4) {
+    post.content = generatePostContent(post.title, post.category)
+  }
+  return post
 }
 
-export const getBlogPostsByCategory = (category: string): BlogPost[] => {
-  return blogPosts.filter(post => post.category === category)
+export const getBlogPostsByCategory = (category: string): BlogPostSummary[] => {
+  return blogPosts.filter(post => post.category === category).map(({ content, ...rest }) => rest)
 }
 
-export const getFeaturedBlogPosts = (): BlogPost[] => {
-  return blogPosts.filter(post => post.featured)
+export const getFeaturedBlogPosts = (): BlogPostSummary[] => {
+  return blogPosts.filter(post => post.featured).map(({ content, ...rest }) => rest)
 }
 
 export const getAllCategories = (): string[] => {
