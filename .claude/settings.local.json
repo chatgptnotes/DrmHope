@@ -35,7 +35,13 @@
       "Bash(gh auth:*)",
       "Bash(git merge:*)",
       "Read(//c/Users/hope4/OneDrive/Pictures/**)",
-      "Read(//c/Users/hope4/**)"
+      "Read(//c/Users/hope4/**)",
+      "Bash(npx vercel:*)",
+      "WebFetch(domain:vercel.com)",
+      "WebFetch(domain:drmhope.vercel.app)",
+      "Bash(git pull:*)",
+      "Bash(npm run:*)",
+      "WebFetch(domain:drmhope.com)"
     ],
     "deny": [],
     "ask": []
