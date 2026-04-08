@@ -6,10 +6,25 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Badge } from "@/components/ui/badge"
 import { Calendar, Clock, ArrowRight, TrendingUp, BookOpen } from "lucide-react"
 import Link from "next/link"
+import { getBlogPostSummaries, getAllCategories } from '@/data/blog-posts'
 
 export const metadata: Metadata = {
-  title: 'AI Software Development Blog | 300+ Articles on AI, Healthcare AI & Agentic Platforms',
-  description: '300+ expert articles on AI software development, machine learning, deep learning, AI agentic systems, healthcare AI, voice AI, conversational AI, computer vision, NLP, industrial IoT, and intelligent automation. Comprehensive tutorials, case studies, and best practices by Dr. Murali BK and DrM Hope team.',
+  alternates: {
+    canonical: 'https://www.drmhope.com/blog',
+  },
+  title: 'AI Blog | Articles on AI & Healthcare Tech',
+  description: '300+ expert articles on AI development, machine learning, healthcare AI, voice AI, and intelligent automation. Tutorials and best practices by Dr. Murali BK.',
+  openGraph: {
+    title: 'AI Blog | Articles on AI & Healthcare Tech',
+    description: '300+ expert articles on AI development, machine learning, and healthcare AI by Dr. Murali BK.',
+    url: 'https://www.drmhope.com/blog',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'AI Blog | Articles on AI & Healthcare Tech',
+    description: '300+ expert articles on AI development, machine learning, and healthcare AI by Dr. Murali BK.',
+  },
   keywords: [
     'AI blog',
     'AI software development blog',
@@ -35,7 +50,7 @@ export const metadata: Metadata = {
 }
 
 export default function Blog() {
-  const { blogPosts, getAllCategories } = require('@/data/blog-posts')
+  const blogPosts = getBlogPostSummaries()
   const allCategories = getAllCategories()
   const categories = ["All", ...allCategories]
 
@@ -97,7 +112,7 @@ export default function Blog() {
                       <div className="flex items-center gap-4 text-sm text-gray-600 dark:text-gray-400">
                         <span className="flex items-center gap-1">
                           <Calendar className="h-4 w-4" />
-                          {new Date(post.date).toLocaleDateString()}
+                          {new Date(post.publishDate).toLocaleDateString()}
                         </span>
                         <span className="flex items-center gap-1">
                           <Clock className="h-4 w-4" />
@@ -108,7 +123,7 @@ export default function Blog() {
                     <CardTitle className="text-2xl hover:text-blue-600 transition-colors">
                       {post.title}
                     </CardTitle>
-                    <CardDescription className="text-base mt-2">
+                    <CardDescription className="text-lg mt-2">
                       {post.excerpt}
                     </CardDescription>
                   </CardHeader>
@@ -123,36 +138,37 @@ export default function Blog() {
             </div>
 
             {/* All Posts */}
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">Latest Articles</h2>
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">Latest Articles</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {blogPosts.map((post) => (
-                <Card key={post.id} className="hover:shadow-lg transition-shadow">
-                  <CardHeader>
-                    <div className="flex items-center gap-2 mb-2">
-                      <Badge variant="outline">{post.category}</Badge>
+              {blogPosts.slice(0, 12).map((post) => (
+                <Card key={post.id} className="hover:shadow-xl transition-shadow border border-gray-200 dark:border-gray-800">
+                  <div className="h-40 bg-gradient-to-br from-blue-400 to-purple-400 rounded-t-lg"></div>
+                  <CardHeader className="pb-3">
+                    <div className="flex items-center gap-2 mb-3">
+                      <Badge variant="outline" className="text-sm px-3 py-1">{post.category}</Badge>
                     </div>
-                    <CardTitle className="text-lg hover:text-blue-600 transition-colors line-clamp-2">
+                    <CardTitle className="text-xl hover:text-blue-600 transition-colors line-clamp-2">
                       {post.title}
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-gray-600 dark:text-gray-400 text-sm line-clamp-3 mb-4">
+                    <p className="text-gray-600 dark:text-gray-400 text-base line-clamp-3 mb-4">
                       {post.excerpt}
                     </p>
-                    <div className="flex items-center gap-4 text-xs text-gray-500 dark:text-gray-500">
+                    <div className="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-500">
                       <span className="flex items-center gap-1">
-                        <Calendar className="h-3 w-3" />
-                        {new Date(post.date).toLocaleDateString()}
+                        <Calendar className="h-4 w-4" />
+                        {new Date(post.publishDate).toLocaleDateString()}
                       </span>
                       <span className="flex items-center gap-1">
-                        <Clock className="h-3 w-3" />
+                        <Clock className="h-4 w-4" />
                         {post.readTime}
                       </span>
                     </div>
                   </CardContent>
                   <CardFooter>
-                    <Button variant="ghost" className="text-blue-600 text-sm">
-                      Read Article <ArrowRight className="ml-2 h-3 w-3" />
+                    <Button variant="ghost" className="text-blue-600 text-base">
+                      Read Article <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                   </CardFooter>
                 </Card>

@@ -5,9 +5,9 @@ export function StructuredData({ article }: { article?: any } = {}) {
     "name": "DrM Hope Softwares",
     "alternateName": ["DrM Hope", "DRM Hope Software", "Dr M Hope"],
     "description": "Leading AI Software Development Company specializing in AI-powered healthcare platforms, AI agentic systems, intelligent automation, and custom AI solutions. Technology partner of Bettroi with 100+ successful AI projects delivered.",
-    "url": "https://drmhope.com",
-    "logo": "https://drmhope.com/images/1631365238387.jpeg",
-    "image": "https://drmhope.com/images/1631365238387.jpeg",
+    "url": "https://www.drmhope.com",
+    "logo": "https://www.drmhope.com/images/1631365238387.jpeg",
+    "image": "https://www.drmhope.com/images/1631365238387.jpeg",
     "founder": {
       "@type": "Person",
       "name": "Dr. B.K. Murali",
@@ -32,8 +32,10 @@ export function StructuredData({ article }: { article?: any } = {}) {
       "availableLanguage": ["English", "Hindi"]
     }],
     "sameAs": [
-      "https://linkedin.com/company/drmhope",
-      "https://github.com/drmhope",
+      "https://www.facebook.com/drmhope",
+      "https://www.instagram.com/drmhope",
+      "https://www.youtube.com/@drmhope",
+      "https://www.linkedin.com/company/drmhope",
       "https://twitter.com/drmhope"
     ],
     "aggregateRating": {
@@ -73,73 +75,17 @@ export function StructuredData({ article }: { article?: any } = {}) {
       "url": "https://bettroi.com",
       "description": "Strategic technology partnership"
     },
-    "makesOffer": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "AI Software Development",
-          "description": "Custom AI software development for healthcare, business, and enterprise solutions",
-          "provider": {
-            "@type": "Organization",
-            "name": "DrM Hope Softwares"
-          },
-          "serviceType": "Software Development"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "AI Agentic Platforms",
-          "description": "Development of AI agent platforms for intelligent automation and decision-making",
-          "provider": {
-            "@type": "Organization",
-            "name": "DrM Hope Softwares"
-          },
-          "serviceType": "AI Platform Development"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Healthcare AI Solutions",
-          "description": "AI-powered healthcare platforms, hospital management systems, and medical AI applications",
-          "provider": {
-            "@type": "Organization",
-            "name": "DrM Hope Softwares"
-          },
-          "serviceType": "Healthcare Software"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Voice AI Development",
-          "description": "Voice AI applications with natural language processing and speech recognition",
-          "provider": {
-            "@type": "Organization",
-            "name": "DrM Hope Softwares"
-          },
-          "serviceType": "Voice AI"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Industrial IoT Solutions",
-          "description": "Industrial automation, SCADA systems, and IoT platforms for manufacturing and utilities",
-          "provider": {
-            "@type": "Organization",
-            "name": "DrM Hope Softwares"
-          },
-          "serviceType": "Industrial IoT"
-        }
-      }
-    ]
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "AI Development Services",
+      "itemListElement": [
+        {"@type": "OfferCatalog", "name": "AI Software Development"},
+        {"@type": "OfferCatalog", "name": "AI Agentic Platforms"},
+        {"@type": "OfferCatalog", "name": "Healthcare AI Solutions"},
+        {"@type": "OfferCatalog", "name": "Voice AI Development"},
+        {"@type": "OfferCatalog", "name": "Industrial IoT Solutions"}
+      ]
+    }
   }
 
   const softwareApplicationSchema = {
@@ -156,7 +102,7 @@ export function StructuredData({ article }: { article?: any } = {}) {
       "priceCurrency": "USD",
       "description": "Contact for pricing"
     },
-    "screenshot": "https://drmhope.com/images/drmhope-platform.png",
+    "screenshot": "https://www.drmhope.com/images/drmhope-platform.png",
     "featureList": [
       "AI-powered patient registration",
       "NLP medical documentation",
@@ -175,7 +121,7 @@ export function StructuredData({ article }: { article?: any } = {}) {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "DrM Hope",
-    "url": "https://drmhope.com",
+    "url": "https://www.drmhope.com",
     "description": "AI Software Development Company - AI Agentic Platforms & Intelligent Solutions",
     "publisher": {
       "@type": "Organization",
@@ -185,7 +131,7 @@ export function StructuredData({ article }: { article?: any } = {}) {
       "@type": "SearchAction",
       "target": {
         "@type": "EntryPoint",
-        "urlTemplate": "https://drmhope.com/search?q={search_term_string}"
+        "urlTemplate": "https://www.drmhope.com/search?q={search_term_string}"
       },
       "query-input": "required name=search_term_string"
     }
@@ -199,19 +145,19 @@ export function StructuredData({ article }: { article?: any } = {}) {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://drmhope.com"
+        "item": "https://www.drmhope.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Projects",
-        "item": "https://drmhope.com/projects"
+        "item": "https://www.drmhope.com/projects"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Services",
-        "item": "https://drmhope.com/services"
+        "item": "https://www.drmhope.com/services"
       }
     ]
   }
@@ -249,31 +195,7 @@ export function StructuredData({ article }: { article?: any } = {}) {
         "name": "Who is Dr. Murali BK?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Dr. B.K. Murali is the Founder & Director of DrM Hope Software and Chief Technology Officer of Bettroi. Known as 'The Surgeon Who Codes with AI', he is a pioneer in AI-powered healthcare software development with expertise in artificial intelligence, machine learning, and healthcare technology innovation."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is DrM Hope's relationship with Bettroi?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "DrM Hope Software is the strategic technology development partner of Bettroi. Dr. Murali BK serves dual roles as Founder & Director of DrM Hope Software and Chief Technology Officer of Bettroi, providing innovative software solutions and engineering expertise to both organizations."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What technologies does DrM Hope specialize in?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "DrM Hope specializes in cutting-edge technologies including Artificial Intelligence, Machine Learning, Deep Learning, Natural Language Processing, Computer Vision, React Native, Next.js, Supabase, TensorFlow, Google AI, OpenAI, Voice AI, Industrial IoT, SCADA systems, and cloud platforms (AWS, Azure, Vercel). We build production-ready AI solutions with modern tech stacks."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How many AI projects has DrM Hope delivered?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "DrM Hope has successfully delivered 100+ AI-powered software projects across healthcare, business automation, education, beauty tech, and industrial sectors. Our portfolio includes hospital management systems, AI tutoring platforms, voice AI applications, virtual try-on solutions, industrial IoT platforms, and custom enterprise AI systems."
+          "text": "Dr. B.K. Murali is the Founder of DrM Hope Software and CTO of Bettroi. A pioneer in AI-powered healthcare software with 100+ successful AI projects delivered."
         }
       },
       {
@@ -281,7 +203,7 @@ export function StructuredData({ article }: { article?: any } = {}) {
         "name": "Does DrM Hope offer custom AI development?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, DrM Hope offers comprehensive custom AI development services tailored to your unique business challenges. We provide AI strategy consulting, custom AI model development, legacy system AI integration, intelligent process automation, advanced data analytics, computer vision solutions, and natural language processing implementations with ongoing support and optimization."
+          "text": "Yes, DrM Hope offers custom AI development including AI strategy consulting, ML model development, NLP, computer vision, and intelligent automation with ongoing support."
         }
       }
     ]
@@ -291,10 +213,10 @@ export function StructuredData({ article }: { article?: any } = {}) {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "DrM Hope Softwares",
-    "image": "https://drmhope.com/images/1631365238387.jpeg",
-    "@id": "https://drmhope.com",
-    "url": "https://drmhope.com",
-    "telephone": "+91-712-XXXXXXX",
+    "image": "https://www.drmhope.com/images/1631365238387.jpeg",
+    "@id": "https://www.drmhope.com",
+    "url": "https://www.drmhope.com",
+    "telephone": "+91-8412030400",
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
@@ -333,63 +255,53 @@ export function StructuredData({ article }: { article?: any } = {}) {
     "@type": "Article",
     "headline": article.title,
     "description": article.excerpt,
-    "image": "https://drmhope.com/images/1631365238387.jpeg",
+    "image": "https://www.drmhope.com/images/1631365238387.jpeg",
     "datePublished": article.publishDate,
     "dateModified": article.publishDate,
     "author": {
       "@type": "Person",
       "name": article.author,
-      "url": "https://drmhope.com/about"
+      "url": "https://www.drmhope.com/about"
     },
     "publisher": {
       "@type": "Organization",
       "name": "DrM Hope Softwares",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://drmhope.com/images/1631365238387.jpeg"
+        "url": "https://www.drmhope.com/images/1631365238387.jpeg"
       }
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://drmhope.com/blog/${article.slug}`
+      "@id": `https://www.drmhope.com/blog/${article.slug}`
     },
     "keywords": article.seoKeywords.join(", "),
     "articleSection": article.category,
     "wordCount": Math.ceil(article.content.length / 6)
   } : null
 
+  const primarySchemas = [
+    organizationSchema,
+    websiteSchema,
+    breadcrumbSchema,
+    localBusinessSchema,
+  ]
+
+  const secondarySchemas = [
+    faqSchema,
+    ...(articleSchema ? [articleSchema] : []),
+  ]
+
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(primarySchemas) }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareApplicationSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(secondarySchemas) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
-      />
-      {articleSchema && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-        />
-      )}
     </>
   )
 }

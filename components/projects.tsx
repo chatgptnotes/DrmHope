@@ -1341,16 +1341,12 @@ export function Projects({ hideHeader = false }: ProjectsProps) {
             <Card
               key={project.id}
               className="flex flex-col border-red-100 dark:border-red-900 hover:shadow-lg transition-shadow relative overflow-hidden"
-              style={{
-                backgroundImage: project.image ? `url(${project.image})` : undefined,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat'
-              }}
             >
-              {/* Overlay for better text readability when background image is present */}
               {project.image && (
-                <div className="absolute inset-0 bg-gradient-to-b from-white/95 via-white/85 to-white/95 dark:from-gray-900/95 dark:via-gray-900/85 dark:to-gray-900/95" />
+                <>
+                  <img src={project.image} alt="" className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+                  <div className="absolute inset-0 bg-gradient-to-b from-white/95 via-white/85 to-white/95 dark:from-gray-900/95 dark:via-gray-900/85 dark:to-gray-900/95" />
+                </>
               )}
               <CardHeader className="relative z-10">
                 <div className="flex items-start justify-between mb-2">

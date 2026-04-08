@@ -112,162 +112,6 @@ export function ContactForm() {
 
   return (
     <section id="contact" className="py-16 bg-white dark:bg-gray-950 relative overflow-hidden">
-      <style jsx>{`
-        .keypad {
-          position: relative;
-          aspect-ratio: 400 / 310;
-          display: flex;
-          place-items: center;
-          width: clamp(280px, 35vw, 400px);
-          -webkit-tap-highlight-color: transparent;
-          transform-style: preserve-3d;
-        }
-
-        .key {
-          transform-style: preserve-3d;
-          border: 0;
-          background: transparent;
-          padding: 0;
-          cursor: pointer;
-          outline: none;
-        }
-
-        .key[data-pressed='true'] .key__content,
-        .key:active .key__content {
-          translate: 0 calc(var(--travel, 20) * 1%);
-        }
-
-        .key__content {
-          width: 100%;
-          display: inline-block;
-          height: 100%;
-          transition: translate 0.12s ease-out;
-          container-type: inline-size;
-          position: relative;
-        }
-
-        .keypad__single .key__text {
-          width: 52%;
-          height: 62%;
-          translate: 45% -16%;
-        }
-
-        .key__text {
-          height: 46%;
-          width: 86%;
-          position: absolute;
-          font-size: 12cqi;
-          z-index: 21;
-          top: 5%;
-          left: 0;
-          color: hsl(0 0% 94%);
-          translate: 8% 10%;
-          transform: rotateX(36deg) rotateY(45deg) rotateX(-90deg) rotate(0deg);
-          text-align: left;
-          padding: 1ch;
-          font-weight: 600;
-        }
-
-        .keypad__single {
-          position: absolute;
-          width: 40.5%;
-          left: 54%;
-          bottom: 36%;
-          height: 46%;
-          clip-path: polygon(
-            0 0,
-            54% 0,
-            89% 24%,
-            100% 70%,
-            54% 100%,
-            46% 100%,
-            0 69%,
-            12% 23%,
-            47% 0%
-          );
-          mask: url(https://assets.codepen.io/605876/keypad-single.png?format=auto&quality=86)
-            50% 50% / 100% 100%;
-        }
-
-        .keypad__single.keypad__single--left {
-          left: 29.3%;
-          bottom: 54.2%;
-        }
-
-        .keypad__single .key__text {
-          font-size: 18cqi;
-        }
-
-        .keypad__single img {
-          top: 0;
-          opacity: 1;
-          width: 96%;
-          position: absolute;
-          left: 50%;
-          translate: -50% 1%;
-        }
-
-        .key__mask {
-          width: 100%;
-          height: 100%;
-          display: inline-block;
-        }
-
-        .keypad__double {
-          position: absolute;
-          background: transparent;
-          width: 64%;
-          height: 65%;
-          left: 6%;
-          bottom: 17.85%;
-          clip-path: polygon(
-            34% 0,
-            93% 44%,
-            101% 78%,
-            71% 100%,
-            66% 100%,
-            0 52%,
-            0 44%,
-            7% 17%,
-            30% 0
-          );
-          mask: url(https://assets.codepen.io/605876/keypad-double.png?format=auto&quality=86)
-            50% 50% / 100% 100%;
-        }
-
-        .keypad__double img {
-          top: 0;
-          opacity: 1;
-          width: 99%;
-          position: absolute;
-          left: 50%;
-          translate: -50% 1%;
-        }
-
-        .key img {
-          filter: hue-rotate(calc(var(--hue, 0) * 1deg))
-            saturate(var(--saturate, 1))
-            brightness(var(--brightness, 1));
-        }
-
-        .keypad__base {
-          position: absolute;
-          bottom: 0;
-          width: 100%;
-        }
-
-        .keypad__base img {
-          transition: translate 0.12s ease-out;
-          width: 100%;
-        }
-
-        @media (max-width: 768px) {
-          .keypad {
-            width: clamp(200px, 80vw, 300px);
-          }
-        }
-      `}</style>
-
       <div className="container mx-auto px-4">
         <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center mb-12">
           <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-5xl text-red-700 dark:text-white">
@@ -278,9 +122,9 @@ export function ContactForm() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto items-center">
           {/* Left Side - Form */}
-          <div className="order-2 md:order-1">
+          <div className="order-2 lg:order-1">
             <div className="bg-red-50 dark:bg-red-950/50 p-8 rounded-lg border border-red-100 dark:border-red-900">
               <h3 className="text-3xl font-bold text-red-700 dark:text-white mb-2">
                 Let's create something.
@@ -290,6 +134,7 @@ export function ContactForm() {
               </p>
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
+                  <label htmlFor="name" className="sr-only">Your Name</label>
                   <input
                     type="text"
                     id="name"
@@ -297,10 +142,12 @@ export function ContactForm() {
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     required
+                    autoComplete="name"
                     className="w-full border border-red-200 dark:border-red-800 px-4 py-3 rounded-lg bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-red-500"
                   />
                 </div>
                 <div>
+                  <label htmlFor="email" className="sr-only">Email Address</label>
                   <input
                     type="email"
                     id="email"
@@ -308,10 +155,12 @@ export function ContactForm() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
+                    autoComplete="email"
                     className="w-full border border-red-200 dark:border-red-800 px-4 py-3 rounded-lg bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-red-500"
                   />
                 </div>
                 <div>
+                  <label htmlFor="message" className="sr-only">Your Message</label>
                   <textarea
                     id="message"
                     placeholder="Tell us about your project..."
@@ -332,15 +181,15 @@ export function ContactForm() {
 
                 {/* Success Message */}
                 {submitStatus === 'success' && (
-                  <div className="p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg text-green-700 dark:text-green-300 text-sm">
-                    ✓ Message sent successfully! We'll get back to you soon.
+                  <div role="alert" className="p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg text-green-700 dark:text-green-300 text-sm">
+                    Message sent successfully! We'll get back to you soon.
                   </div>
                 )}
 
                 {/* Error Message */}
                 {submitStatus === 'error' && (
-                  <div className="p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg text-red-700 dark:text-white text-sm">
-                    ✗ Failed to send message. Please try again or contact us directly.
+                  <div role="alert" className="p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg text-red-700 dark:text-white text-sm">
+                    Failed to send message. Please try again or contact us directly.
                   </div>
                 )}
               </form>
@@ -356,10 +205,10 @@ export function ContactForm() {
                     </p>
                   </div>
                 </div>
-                {/* <div className="flex gap-3 items-center">
+                <div className="flex gap-3 items-center">
                   <Phone className="h-5 w-5 text-red-600 dark:text-white flex-shrink-0" />
-                 <p className="text-sm text-gray-700 dark:text-gray-300">+91 8412030400</p>
-                </div> */}
+                  <a href="tel:+918412030400" className="text-sm text-gray-700 dark:text-gray-300 hover:text-red-600">+91 8412030400</a>
+                </div>
                 <div className="flex gap-3 items-center">
                   <Mail className="h-5 w-5 text-red-600 dark:text-white flex-shrink-0" />
                   {/* <p className="text-sm text-gray-700 dark:text-gray-300">CMD@HOPEHOSPITAL.COM</p> */}
@@ -375,7 +224,7 @@ export function ContactForm() {
               {/* Base */}
               <div className="keypad__base">
                 <img
-                  src="https://assets.codepen.io/605876/keypad-base.png?format=auto&quality=86"
+                  src="/images/keypad-base.png"
                   alt="keypad base"
                 />
               </div>
@@ -385,12 +234,6 @@ export function ContactForm() {
                 id="one"
                 className="key keypad__single keypad__single--left"
                 data-pressed={pressedKey === 'one' ? 'true' : 'false'}
-                style={{
-                  '--travel': 26,
-                  '--hue': 0,
-                  '--saturate': 1,
-                  '--brightness': 1
-                } as React.CSSProperties}
                 onClick={() => {
                   handleKeyPress('one')
                   document.getElementById('email')?.focus()
@@ -400,7 +243,7 @@ export function ContactForm() {
                   <span className="key__content">
                     <span className="key__text">email</span>
                     <img
-                      src="https://assets.codepen.io/605876/keypad-single.png?format=auto&quality=86"
+                      src="/images/keypad-single.png"
                       alt=""
                     />
                   </span>
@@ -412,12 +255,6 @@ export function ContactForm() {
                 id="two"
                 className="key keypad__single"
                 data-pressed={pressedKey === 'two' ? 'true' : 'false'}
-                style={{
-                  '--travel': 26,
-                  '--hue': 20,
-                  '--saturate': 1.2,
-                  '--brightness': 1.1
-                } as React.CSSProperties}
                 onClick={() => {
                   handleKeyPress('two')
                   document.getElementById('message')?.focus()
@@ -427,7 +264,7 @@ export function ContactForm() {
                   <span className="key__content">
                     <span className="key__text">msg</span>
                     <img
-                      src="https://assets.codepen.io/605876/keypad-single.png?format=auto&quality=86"
+                      src="/images/keypad-single.png"
                       alt=""
                     />
                   </span>
@@ -439,12 +276,6 @@ export function ContactForm() {
                 id="three"
                 className="key keypad__double"
                 data-pressed={pressedKey === 'three' ? 'true' : 'false'}
-                style={{
-                  '--travel': 18,
-                  '--hue': 114,
-                  '--saturate': 1.4,
-                  '--brightness': 1.2
-                } as React.CSSProperties}
                 onClick={() => {
                   handleKeyPress('three')
                   const form = document.querySelector('form') as HTMLFormElement
@@ -455,7 +286,7 @@ export function ContactForm() {
                   <span className="key__content">
                     <span className="key__text">send.</span>
                     <img
-                      src="https://assets.codepen.io/605876/keypad-double.png?format=auto&quality=86"
+                      src="/images/keypad-double.png"
                       alt=""
                     />
                   </span>

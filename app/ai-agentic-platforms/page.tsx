@@ -7,8 +7,11 @@ import { Badge } from "@/components/ui/badge"
 import { CheckCircle, Bot, Phone, Mail, MessageCircle, Workflow, Sparkles, Clock, TrendingUp } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: 'AI Agentic Platforms | Intelligent AI Agent Development & Automation',
-  description: 'Build powerful AI agentic platforms with intelligent autonomous agents. Voice AI, chatbots, workflow automation, and multi-agent systems. Transform business operations with AI agents.',
+  alternates: {
+    canonical: 'https://www.drmhope.com/ai-agentic-platforms',
+  },
+  title: 'AI Agentic Platforms | AI Agent Development',
+  description: 'Build powerful AI agentic platforms with autonomous agents. Voice AI, chatbots, workflow automation, and multi-agent systems for business operations.',
   keywords: [
     'AI agentic platforms',
     'AI agentic software',
@@ -25,7 +28,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'AI Agentic Platforms | Intelligent AI Agent Development',
     description: 'Build autonomous AI agents for voice, chat, workflow automation, and intelligent business processes',
+    url: 'https://www.drmhope.com/ai-agentic-platforms',
     type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'AI Agentic Platforms | AI Agent Development',
+    description: 'Build autonomous AI agents for voice, chat, workflow automation, and intelligent business processes',
   }
 }
 

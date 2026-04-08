@@ -7,8 +7,11 @@ import { Badge } from "@/components/ui/badge"
 import { CheckCircle, Code, Cpu, Database, Zap, Brain, MessageSquare, Eye } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: 'AI Software Development Company | Custom AI Solutions & ML Platforms',
-  description: 'Leading AI software development company building custom AI solutions, machine learning platforms, NLP systems, and intelligent automation. 100+ successful AI projects delivered across healthcare, business, and enterprise.',
+  alternates: {
+    canonical: 'https://www.drmhope.com/ai-software-development',
+  },
+  title: 'AI Software Development | Custom AI Solutions',
+  description: 'Custom AI solutions, machine learning platforms, NLP systems, and intelligent automation. 100+ AI projects across healthcare and enterprise.',
   keywords: [
     'AI software development',
     'AI software development company',
@@ -24,7 +27,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'AI Software Development Company | Custom AI Solutions',
     description: 'Expert AI software development services - Machine Learning, NLP, Computer Vision, and Intelligent Automation',
+    url: 'https://www.drmhope.com/ai-software-development',
     type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'AI Software Development | Custom AI Solutions',
+    description: 'Expert AI software development services - Machine Learning, NLP, Computer Vision, and Intelligent Automation',
   }
 }
 

@@ -27,6 +27,9 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   }
 
   return {
+    alternates: {
+      canonical: `https://www.drmhope.com/blog/${post.slug}`,
+    },
     title: `${post.title} | DrM Hope AI Blog`,
     description: post.excerpt,
     keywords: post.seoKeywords,
@@ -34,6 +37,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     openGraph: {
       title: post.title,
       description: post.excerpt,
+      url: `https://www.drmhope.com/blog/${post.slug}`,
       type: 'article',
       publishedTime: post.publishDate,
       authors: [post.author],

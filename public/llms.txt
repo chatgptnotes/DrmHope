@@ -1,0 +1,91 @@
+# DrM Hope - AI Software Development & Consulting
+
+> DrM Hope is an AI software development company founded by Dr. Murali BK in 2011. Based in Nagpur, India, we specialize in AI-powered healthcare platforms, AI agentic systems, intelligent automation, and custom AI solutions. We are the technology partner of Bettroi, with 100+ successful AI projects delivered across healthcare, enterprise, and government sectors.
+
+## About
+
+DrM Hope is an AI software development and consulting company. Founded by Dr. B.K. Murali (Founder & Director of DrM Hope, CTO of Bettroi), we build AI-powered software solutions across healthcare, enterprise automation, and intelligent platforms.
+
+- 100+ AI projects delivered with 98% client satisfaction
+- 25+ team members specializing in AI, ML, NLP, and software engineering
+- Serving clients in India, US, UK, Australia, and UAE
+- Founded in 2011 in Nagpur, Maharashtra, India
+
+## Core Services
+
+- [AI Software Development](https://www.drmhope.com/ai-software-development): Custom AI applications, machine learning platforms, deep learning solutions, NLP systems, computer vision, and generative AI development.
+- [AI Agentic Platforms](https://www.drmhope.com/ai-agentic-platforms): Autonomous AI agents, voice AI systems, AI chatbots, workflow automation, and multi-agent systems for business operations.
+- [Healthcare AI Solutions](https://www.drmhope.com/healthcare-ai-solutions): Hospital information systems, NLP medical records, predictive diagnostics, AI-assisted diagnosis, telemedicine platforms.
+- [All Services](https://www.drmhope.com/services): Full range of AI development, consulting, and integration services.
+
+## Industry Solutions
+
+- **Healthcare**: Hospital management, electronic health records, medical billing, pharmacy management, laboratory information systems
+- **Government**: Custom government applications, regulatory compliance, workflow automation
+- **Finance**: Banking & payment processing, financial analytics, risk assessment tools
+- **Education**: AI tutoring platforms, adaptive learning systems
+- **Manufacturing**: Industrial IoT, SCADA systems, predictive maintenance
+
+## Technical Expertise
+
+- Machine Learning & Deep Learning
+- Natural Language Processing (NLP) & LLMs
+- Computer Vision
+- Generative AI & AI Agents
+- Predictive Analytics
+- Healthcare AI & Medical NLP
+- Voice AI & Conversational AI
+- Industrial IoT & SCADA Systems
+- React Native, Next.js, Supabase
+
+## Key Projects
+
+- **AdamRIT** ([adamrit.com](https://adamrit.com)): ESIC patient mapping system with real-time patient tracking
+- **PrewedAI** ([prewedai.com](https://www.prewedai.com)): AI-generated prewedding photography platform
+- **Linkist NFC** ([linkist.2men.co](https://linkist.2men.co)): AI-powered smart business cards with NFC & QR technology
+- **Galvon**: AI-powered enterprise ecosystem
+- **Ampris**: Digital platform solutions
+- **FlowNexus**: Workflow automation platform
+- **NexaProc**: Process optimization system
+
+## Key Pages
+
+- [Homepage](https://www.drmhope.com/): Company overview, mission, and AI capabilities
+- [AI Software Development](https://www.drmhope.com/ai-software-development): Custom AI solutions and development services
+- [AI Agentic Platforms](https://www.drmhope.com/ai-agentic-platforms): Autonomous AI agent development
+- [Healthcare AI Solutions](https://www.drmhope.com/healthcare-ai-solutions): AI for hospitals and medical systems
+- [Services](https://www.drmhope.com/services): Complete service offerings
+- [Solutions](https://www.drmhope.com/solutions): Industry-specific AI solutions
+- [Projects](https://www.drmhope.com/projects): Portfolio of 100+ AI projects
+- [Case Studies](https://www.drmhope.com/case-studies): Real results and success stories
+- [Blog](https://www.drmhope.com/blog): 300+ articles on AI development, healthcare AI, and best practices
+- [Client Success](https://www.drmhope.com/client-success): Client satisfaction metrics and testimonials
+- [About](https://www.drmhope.com/about): Company background, founder, and team
+- [Contact](https://www.drmhope.com/contact): Get in touch for AI consulting
+
+## FAQ
+
+### What AI software development services does DrM Hope offer?
+DrM Hope offers comprehensive AI software development services including AI-powered healthcare platforms, AI agentic systems, intelligent automation solutions, voice AI applications, virtual try-on technology, industrial IoT solutions, and custom AI development for healthcare, business, and enterprise sectors.
+
+### What is an AI agentic platform?
+An AI agentic platform is an intelligent system powered by autonomous AI agents that can make decisions, take actions, and solve problems without constant human intervention. These platforms use machine learning, natural language processing, and advanced reasoning to automate complex workflows.
+
+### What industries does DrM Hope serve?
+DrM Hope serves healthcare, government, finance, education, manufacturing, beauty & lifestyle, and custom enterprise AI solutions across India, US, UK, Australia, and UAE.
+
+### Who is Dr. Murali BK?
+Dr. B.K. Murali is the Founder of DrM Hope Software and CTO of Bettroi. A pioneer in AI-powered healthcare software development with 100+ successful AI projects delivered.
+
+### Does DrM Hope offer custom AI development?
+Yes, DrM Hope offers custom AI development including AI strategy consulting, ML model development, NLP, computer vision, and intelligent automation with ongoing support.
+
+## Company Details
+
+- **Founded**: 2011
+- **Founder**: Dr. B.K. Murali (Founder & Director, DrM Hope | CTO, Bettroi)
+- **Location**: Nagpur, Maharashtra, India
+- **Website**: https://www.drmhope.com
+- **Email**: info@drmhope.com
+- **Partnership**: Technology Partner of Bettroi
+- **Rating**: 4.9/5 from 87+ reviews

@@ -1,25 +1,23 @@
-"use client"
-
 import { Sparkles, Code, Zap } from "lucide-react"
 
 export function FeatureCards() {
   const features = [
     {
       icon: Sparkles,
-      title: "AI Integration",
-      description: "Transform any industry with AI",
+      title: "NLP & Voice AI Development",
+      description: "Natural language processing, voice AI assistants, and conversational AI solutions for enterprise",
       gradient: "from-[#FD5F07] to-[#ff8c42]",
     },
     {
       icon: Code,
-      title: "Custom Development",
-      description: "Bespoke AI solutions",
+      title: "Computer Vision & Machine Learning",
+      description: "Custom computer vision, predictive analytics, and deep learning models for your business",
       gradient: "from-[#009CB3] to-[#7AC5C3]",
     },
     {
       icon: Zap,
-      title: "Digital Innovation",
-      description: "Future-ready technology",
+      title: "AI Agentic Platforms & Automation",
+      description: "Autonomous AI agents, intelligent workflow automation, and generative AI solutions",
       gradient: "from-[#342E39] to-[#404040]",
     },
   ]
@@ -27,7 +25,12 @@ export function FeatureCards() {
   return (
     <section className="py-20 bg-white dark:bg-gray-950">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
+            Core AI Development Capabilities
+          </h2>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {features.map((feature, index) => {
             const Icon = feature.icon
             return (
@@ -50,7 +53,7 @@ export function FeatureCards() {
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
+                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
                     {feature.title}
                   </h3>
 

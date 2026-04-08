@@ -11,7 +11,7 @@ export function ClientLogos() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md border border-red-100 dark:border-red-900">
             <h3 className="text-xl font-bold text-red-700 dark:text-white mb-3">Healthcare Solutions</h3>
             <p className="text-gray-700 dark:text-gray-300">

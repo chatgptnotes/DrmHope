@@ -63,52 +63,52 @@ export function Navbar() {
               Contact Us
             </Button>
           </Link>
-          <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <Button variant="ghost" size="icon" className="md:hidden h-11 w-11" onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle menu">
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </Button>
         </div>
       </div>
       {isMenuOpen && (
-        <div className="container md:hidden py-4 border-t border-red-100 dark:border-red-900">
-          <nav className="flex flex-col gap-4">
+        <div className="container md:hidden py-4 border-t border-red-100 dark:border-red-900 max-h-[calc(100vh-64px)] overflow-y-auto">
+          <nav className="flex flex-col gap-1">
             <Link
               href="/services"
-              className="text-sm font-medium text-gray-700 dark:text-gray-300 transition-colors hover:text-red-600 dark:hover:text-red-400"
+              className="text-base font-medium text-gray-700 dark:text-gray-300 transition-colors hover:text-red-600 dark:hover:text-red-400 py-3 px-2"
               onClick={() => setIsMenuOpen(false)}
             >
               Services
             </Link>
             <Link
               href="/solutions"
-              className="text-sm font-medium text-gray-700 dark:text-gray-300 transition-colors hover:text-red-600 dark:hover:text-red-400"
+              className="text-base font-medium text-gray-700 dark:text-gray-300 transition-colors hover:text-red-600 dark:hover:text-red-400 py-3 px-2"
               onClick={() => setIsMenuOpen(false)}
             >
               Solutions
             </Link>
             <Link
               href="/projects"
-              className="text-sm font-medium text-gray-700 dark:text-gray-300 transition-colors hover:text-red-600 dark:hover:text-red-400"
+              className="text-base font-medium text-gray-700 dark:text-gray-300 transition-colors hover:text-red-600 dark:hover:text-red-400 py-3 px-2"
               onClick={() => setIsMenuOpen(false)}
             >
               Our Projects
             </Link>
             <Link
               href="/blog"
-              className="text-sm font-medium text-gray-700 dark:text-gray-300 transition-colors hover:text-red-600 dark:hover:text-red-400"
+              className="text-base font-medium text-gray-700 dark:text-gray-300 transition-colors hover:text-red-600 dark:hover:text-red-400 py-3 px-2"
               onClick={() => setIsMenuOpen(false)}
             >
               Blog
             </Link>
             <Link
               href="/client-success"
-              className="text-sm font-medium text-gray-700 dark:text-gray-300 transition-colors hover:text-red-600 dark:hover:text-red-400"
+              className="text-base font-medium text-gray-700 dark:text-gray-300 transition-colors hover:text-red-600 dark:hover:text-red-400 py-3 px-2"
               onClick={() => setIsMenuOpen(false)}
             >
               Client Success
             </Link>
             <Link
               href="/about"
-              className="text-sm font-medium text-gray-700 dark:text-gray-300 transition-colors hover:text-red-600 dark:hover:text-red-400"
+              className="text-base font-medium text-gray-700 dark:text-gray-300 transition-colors hover:text-red-600 dark:hover:text-red-400 py-3 px-2"
               onClick={() => setIsMenuOpen(false)}
             >
               About Us

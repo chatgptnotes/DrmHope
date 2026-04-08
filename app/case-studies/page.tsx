@@ -7,8 +7,22 @@ import { Badge } from "@/components/ui/badge"
 import { CheckCircle, TrendingUp, Users, Zap, Target, Award, BarChart } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: 'AI Project Case Studies | Success Stories & Results',
-  description: 'Explore our AI project case studies. See how we helped hospitals, enterprises, and businesses achieve remarkable results with AI software, agentic platforms, and intelligent automation.',
+  alternates: {
+    canonical: 'https://www.drmhope.com/case-studies',
+  },
+  title: 'AI Case Studies | Real Results & Success Stories',
+  description: 'AI project case studies showing real results. See how we helped hospitals and enterprises succeed with AI software, agentic platforms, and automation.',
+  openGraph: {
+    title: 'AI Case Studies | Real Results & Success Stories',
+    description: 'See how we helped hospitals and enterprises succeed with AI software, agentic platforms, and automation.',
+    url: 'https://www.drmhope.com/case-studies',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'AI Case Studies | Real Results & Success Stories',
+    description: 'See how we helped hospitals and enterprises succeed with AI software, agentic platforms, and automation.',
+  },
   keywords: [
     'AI case studies',
     'AI project success stories',

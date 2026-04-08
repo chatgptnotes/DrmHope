@@ -1,6 +1,22 @@
+import { Metadata } from 'next'
+import Image from 'next/image'
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { Award, TrendingUp, Users, Target, CheckCircle2 } from "lucide-react"
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: 'https://www.drmhope.com/client-success',
+  },
+  title: 'Client Success Stories & Results',
+  description: '98% client satisfaction across 150+ AI projects. See how DrM Hope delivers measurable results in healthcare, automation, and enterprise AI.',
+  openGraph: {
+    title: 'Client Success Stories & Results | DrM Hope',
+    description: '98% client satisfaction across 150+ AI projects. See how DrM Hope delivers measurable results in healthcare, automation, and enterprise AI.',
+    url: 'https://www.drmhope.com/client-success',
+    type: 'website',
+  },
+}
 
 export default function ClientSuccessPage() {
   const successMetrics = [
@@ -230,10 +246,13 @@ export default function ClientSuccessPage() {
                     </p>
                   </div>
                   <div className="flex items-center">
-                    <img
+                    <Image
                       src={testimonial.image}
                       alt={testimonial.author}
+                      width={48}
+                      height={48}
                       className="w-12 h-12 rounded-full mr-4"
+                      loading="lazy"
                     />
                     <div>
                       <div className="font-semibold text-gray-900 dark:text-white">
