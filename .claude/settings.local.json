@@ -41,7 +41,16 @@
       "WebFetch(domain:drmhope.vercel.app)",
       "Bash(git pull:*)",
       "Bash(npm run:*)",
-      "WebFetch(domain:drmhope.com)"
+      "WebFetch(domain:drmhope.com)",
+      "Bash(npm -v)",
+      "Bash(pip install:*)",
+      "Bash(python:*)",
+      "Bash(taskkill //F //IM node.exe)",
+      "WebFetch(domain:www.drmhope.com)",
+      "Bash(ls -la \"C:\\\\\\\\Users\\\\\\\\hope4\\\\\\\\Pictures\\\\\\\\\")",
+      "Bash(taskkill //F //PID 4720)",
+      "Bash(npx next:*)",
+      "Bash(timeout 15 tail -f C:\\\\Users\\\\hope4\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-hope4-Downloads-DrmHope\\\\09599cb3-0a35-4113-95bd-f502874c0a28\\\\tasks\\\\bvubd8b91.output)"
     ],
     "deny": [],
     "ask": []

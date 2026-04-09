@@ -43,7 +43,7 @@ export function HeroSection() {
 
   return (
     <section
-      className="relative min-h-screen flex items-center overflow-hidden py-20 px-4 sm:px-6 md:px-8 lg:px-16 hero-gradient"
+      className="relative flex items-center justify-center overflow-x-hidden py-6 sm:py-8 lg:py-8 hero-gradient min-h-[calc(100svh-80px)]"
     >
       {/* Lightweight CSS Particles Background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -51,60 +51,60 @@ export function HeroSection() {
       </div>
 
       {/* Content Grid */}
-      <div className="container relative z-10 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-16 items-center max-w-7xl">
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-center">
         {/* Left Content */}
-        <div className="max-w-2xl text-center lg:text-left order-2 lg:order-1">
-          <div className="inline-block mb-6 px-6 py-3 bg-white/20 rounded-full border border-white/20">
-            <span className="text-white text-base font-medium">DrM Hope - Better Technology</span>
+        <div className="max-w-xl lg:max-w-none text-center lg:text-left order-2 lg:order-1 flex flex-col gap-2.5 sm:gap-3">
+          <div className="inline-block self-center lg:self-start px-4 py-1.5 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
+            <span className="text-white text-xs sm:text-sm font-medium tracking-wide">DrM Hope - Better Technology</span>
           </div>
 
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-8">
+          <h1 className="text-2xl sm:text-3xl md:text-[2rem] lg:text-[2.45rem] xl:text-[2.7rem] font-bold text-white leading-[1.15] tracking-tight">
             AI Driven Software Development{" "}
             <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
               & Technical Consulting
             </span>
           </h1>
 
-          <p className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed">
-            We leverage <strong>AI services</strong> and advanced <strong>intelligent automation</strong> to align technology with your business goals. Our solutions ensure seamless adoption, enhanced customer experiences, and sustained growth in a fast-changing market.
+          <p className="text-sm sm:text-base md:text-base lg:text-lg text-gray-200 leading-relaxed max-w-xl lg:max-w-none">
+            We leverage <strong>AI services</strong> and advanced <strong>intelligent automation</strong> to align technology with your business goals — seamless adoption, enhanced experiences, and sustained growth.
           </p>
 
-          <div className="mb-8 p-6 bg-white/20 rounded-xl border border-white/20">
-            <p className="text-white text-lg">
-              <strong>Technology Partner of Bettroi</strong> - Founded by <strong>Dr. Murali BK</strong>, CTO of Bettroi. 100+ successful AI projects delivered.
+          <div className="p-2.5 bg-white/10 backdrop-blur-sm rounded-xl border border-white/15">
+            <p className="text-white text-xs sm:text-sm leading-relaxed">
+              <strong>Technology Partner of Bettroi</strong> — Founded by <strong>Dr. Murali BK</strong>, CTO of Bettroi. 100+ successful AI projects delivered.
             </p>
           </div>
 
-          <div className="flex flex-wrap gap-3 sm:gap-4 lg:gap-6 justify-center lg:justify-start mb-8">
-            <div className="flex items-center gap-3 px-4 py-2 bg-white/20 rounded-lg text-white/90 border border-white/20">
-              <span className="text-sm font-medium">Machine Learning</span>
+          <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
+            <div className="px-2.5 py-1 bg-white/10 backdrop-blur-sm rounded-md text-white/90 border border-white/15 text-xs font-medium">
+              Machine Learning
             </div>
-            <div className="flex items-center gap-3 px-4 py-2 bg-white/20 rounded-lg text-white/90 border border-white/20">
-              <span className="text-sm font-medium">NLP & LLMs</span>
+            <div className="px-2.5 py-1 bg-white/10 backdrop-blur-sm rounded-md text-white/90 border border-white/15 text-xs font-medium">
+              NLP & LLMs
             </div>
-            <div className="flex items-center gap-3 px-4 py-2 bg-white/20 rounded-lg text-white/90 border border-white/20">
-              <span className="text-sm font-medium">Computer Vision</span>
+            <div className="px-2.5 py-1 bg-white/10 backdrop-blur-sm rounded-md text-white/90 border border-white/15 text-xs font-medium">
+              Computer Vision
             </div>
-            <div className="flex items-center gap-3 px-4 py-2 bg-white/20 rounded-lg text-white/90 border border-white/20">
-              <span className="text-sm font-medium">AI Agents</span>
+            <div className="px-2.5 py-1 bg-white/10 backdrop-blur-sm rounded-md text-white/90 border border-white/15 text-xs font-medium">
+              AI Agents
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+          <div className="flex flex-col sm:flex-row gap-2.5 justify-center lg:justify-start pt-1">
             <Button
               asChild
               size="lg"
-              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-300 hover:scale-105 shadow-lg border-0"
+              className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-7 py-2.5 text-sm sm:text-base font-bold rounded-xl transition-all duration-300 hover:scale-105 shadow-[0_4px_20px_rgba(99,102,241,0.4)] hover:shadow-[0_6px_28px_rgba(99,102,241,0.55)] border-0"
             >
               <Link href="/solutions">
                 Explore AI Solutions
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
             <Button
               asChild
               size="lg"
-              className="bg-white/20 border-2 border-white hover:bg-white hover:text-gray-900 text-white px-8 py-6 text-lg font-semibold rounded-lg transition-all duration-300 hover:scale-105 shadow-lg"
+              className="bg-white/15 border-2 border-white hover:bg-white hover:text-gray-900 text-white px-7 py-2.5 text-sm sm:text-base font-bold rounded-xl transition-all duration-300 hover:scale-105 shadow-[0_4px_20px_rgba(255,255,255,0.12)] hover:shadow-[0_6px_28px_rgba(255,255,255,0.25)]"
             >
               <Link href="/projects">
                 View AI Projects
@@ -114,56 +114,64 @@ export function HeroSection() {
         </div>
 
         {/* Right Slider */}
-        <div className="relative w-full max-w-md mx-auto lg:mx-0 order-1 lg:order-2">
-          {mounted ? <Swiper
-            effect="cards"
-            grabCursor={true}
-            modules={[EffectCards, Autoplay]}
-            className="w-full h-[280px] sm:h-[350px] md:h-[400px] lg:h-[490px]"
-            autoplay={{
-              delay: 5000,
-              disableOnInteraction: true,
-              pauseOnMouseEnter: true,
-            }}
-            loop={true}
-          >
-            {industries.map((industry, index) => (
-              <SwiperSlide
-                key={index}
-                className="rounded-[20px] border border-white/30 overflow-hidden"
-              >
-                <div className="relative w-full h-full">
-                  <Image
-                    src={industry.image}
-                    alt={industry.title}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 450px"
-                    className="object-cover"
-                    priority={index === 0}
-                  />
+        <div className="relative w-full max-w-xs sm:max-w-sm lg:max-w-none mx-auto lg:mx-0 order-1 lg:order-2 flex items-center justify-center lg:justify-end">
+          <div className="w-full lg:w-[380px] xl:w-[410px]">
+            {mounted ? <Swiper
+              effect="cards"
+              grabCursor={true}
+              modules={[EffectCards, Autoplay]}
+              className="w-full h-[210px] sm:h-[250px] md:h-[290px] lg:h-[330px] xl:h-[360px]"
+              autoplay={{
+                delay: 5000,
+                disableOnInteraction: true,
+                pauseOnMouseEnter: true,
+              }}
+              loop={true}
+              cardsEffect={{
+                perSlideOffset: 8,
+                perSlideRotate: 2,
+                rotate: true,
+                slideShadows: false,
+              }}
+            >
+              {industries.map((industry, index) => (
+                <SwiperSlide
+                  key={index}
+                  className="rounded-2xl border border-white/25 overflow-hidden shadow-2xl"
+                >
+                  <div className="relative w-full h-full">
+                    <Image
+                      src={industry.image}
+                      alt={industry.title}
+                      fill
+                      sizes="(max-width: 640px) 320px, (max-width: 768px) 384px, 440px"
+                      className="object-cover object-center"
+                      priority={index === 0}
+                    />
 
-                  {/* Cost Badge */}
-                  <div
-                    className={`absolute top-2 right-2 px-3 py-1.5 rounded-full text-sm font-semibold glass-light ${index < 2 ? 'text-white' : 'text-gray-800'}`}
-                  >
-                    Enterprise Ready
-                  </div>
+                    {/* Badge */}
+                    <div
+                      className={`absolute top-3 right-3 px-3 py-1 rounded-full text-xs font-semibold glass-light ${index < 2 ? 'text-white' : 'text-gray-800'}`}
+                    >
+                      Enterprise Ready
+                    </div>
 
-                  {/* Overlay */}
-                  <div
-                    className="absolute bottom-0 left-0 right-0 p-5 h-[120px] sm:h-[150px] flex flex-col justify-center rounded-b-[20px] border-t border-white/30 glass-overlay"
-                  >
-                    <h3 className="text-xl font-semibold text-white mb-2">
-                      {industry.title}
-                    </h3>
-                    <p className="text-sm text-white/90 leading-snug line-clamp-3">
-                      {industry.description}
-                    </p>
+                    {/* Overlay */}
+                    <div
+                      className="absolute bottom-0 left-0 right-0 p-4 pb-5 flex flex-col justify-end rounded-b-2xl border-t border-white/20 glass-overlay bg-gradient-to-t from-black/60 via-black/30 to-transparent"
+                    >
+                      <h3 className="text-base sm:text-lg font-semibold text-white mb-1">
+                        {industry.title}
+                      </h3>
+                      <p className="text-xs text-white/85 leading-snug line-clamp-2">
+                        {industry.description}
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper> : <div className="w-full h-[280px] sm:h-[350px] md:h-[400px] lg:h-[490px] rounded-[20px] bg-white/10 animate-pulse" />}
+                </SwiperSlide>
+              ))}
+            </Swiper> : <div className="w-full h-[210px] sm:h-[250px] md:h-[290px] lg:h-[330px] xl:h-[360px] rounded-2xl bg-white/10 animate-pulse" />}
+          </div>
         </div>
       </div>
     </section>
