@@ -18,10 +18,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.drmhope.com',
   },
-  title: 'AI Software Development & Consulting | DrM Hope',
+  title: 'AI Software Development & Consulting Company | DrM Hope',
   description: 'AI-driven software development and consulting by Dr. Murali BK. 100+ projects in healthcare, automation, and enterprise AI solutions.',
   openGraph: {
-    title: 'AI Software Development & Consulting | DrM Hope',
+    title: 'AI Software Development & Consulting Company | DrM Hope',
     description: 'AI-driven software development and consulting by Dr. Murali BK. 100+ projects in healthcare, automation, and enterprise AI solutions.',
     url: 'https://www.drmhope.com',
     type: 'website',

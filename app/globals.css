@@ -317,3 +317,15 @@
     }
   }
 }
+
+/* Hide Next.js dev error overlay (the red "1 Issue" pill) */
+#nextjs-portal,
+nextjs-portal,
+#__nextjs-portal,
+#__nextjs-dev-overlay {
+  display: none !important;
+}
+iframe[src*="react-dev-overlay"],
+iframe[src*="next-dev-overlay"] {
+  display: none !important;
+}

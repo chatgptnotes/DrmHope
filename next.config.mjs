@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  devIndicators: false,
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -17,6 +18,17 @@ const nextConfig = {
   compress: true,
   poweredByHeader: false,
   reactStrictMode: true,
+  trailingSlash: false,
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'drmhope.com' }],
+        destination: 'https://www.drmhope.com/:path*',
+        permanent: true,
+      },
+    ]
+  },
   async headers() {
     return [
       {

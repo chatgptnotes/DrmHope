@@ -16,7 +16,7 @@ export function Footer() {
               <p>701, Casa Royal Apartment, Mohan Nagar</p>
               <p>Nagpur, Maharashtra 440001, India</p>
               <p><a href="tel:+918412030400" className="hover:text-primary-600 dark:hover:text-primary-400">+91 8412030400</a></p>
-              <p><a href="mailto:info@drmhope.com" className="hover:text-primary-600 dark:hover:text-primary-400">info@drmhope.com</a></p>
+              <p><a href="/contact" className="hover:text-primary-600 dark:hover:text-primary-400">Contact Us via Form</a></p>
             </address>
             <div className="flex gap-3 pt-2">
               <Link href="https://www.facebook.com/drmhope" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-secondary-500 hover:text-primary-600 dark:hover:text-primary-400 p-3">

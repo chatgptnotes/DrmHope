@@ -13,7 +13,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.drmhope.com'),
   title: {
-    default: 'DrM Hope | AI Software Development & Consulting',
+    default: 'AI Software Development & Consulting Company | DrM Hope',
     template: '%s | DrM Hope'
   },
   description: 'AI software development by Dr. Murali BK. 100+ projects in healthcare, automation, and enterprise AI. Technology partner of Bettroi.',
@@ -85,7 +85,7 @@ export const metadata: Metadata = {
   publisher: 'DrM Hope',
   applicationName: 'DrM Hope AI Platform',
   openGraph: {
-    title: 'DrM Hope | AI Software Development & Consulting',
+    title: 'AI Software Development & Consulting Company | DrM Hope',
     description: 'AI software development by Dr. Murali BK. 100+ projects in healthcare, automation, and enterprise AI. Technology partner of Bettroi.',
     url: 'https://www.drmhope.com',
     siteName: 'DrM Hope - Better Technology',
@@ -129,6 +129,10 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://www.drmhope.com',
+    languages: {
+      'en': 'https://www.drmhope.com',
+      'x-default': 'https://www.drmhope.com',
+    },
   },
   manifest: '/manifest.json',
   category: 'technology',

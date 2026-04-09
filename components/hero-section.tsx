@@ -1,5 +1,6 @@
 "use client"
 
+import { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
@@ -11,6 +12,8 @@ import "swiper/css"
 import "swiper/css/effect-cards"
 
 export function HeroSection() {
+  const [mounted, setMounted] = useState(false)
+  useEffect(() => { setMounted(true) }, [])
   const industries = [
     {
       title: "AI-Powered Healthcare",
@@ -112,7 +115,7 @@ export function HeroSection() {
 
         {/* Right Slider */}
         <div className="relative w-full max-w-md mx-auto lg:mx-0 order-1 lg:order-2">
-          <Swiper
+          {mounted ? <Swiper
             effect="cards"
             grabCursor={true}
             modules={[EffectCards, Autoplay]}
@@ -160,7 +163,7 @@ export function HeroSection() {
                 </div>
               </SwiperSlide>
             ))}
-          </Swiper>
+          </Swiper> : <div className="w-full h-[280px] sm:h-[350px] md:h-[400px] lg:h-[490px] rounded-[20px] bg-white/10 animate-pulse" />}
         </div>
       </div>
     </section>
