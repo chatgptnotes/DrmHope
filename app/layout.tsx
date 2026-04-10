@@ -164,9 +164,7 @@ export default function RootLayout({
           </div>
         </ThemeProvider>
       </body>
-      {process.env.NEXT_PUBLIC_GA_ID && (
-        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
-      )}
+      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID || 'G-S75YCBQKPG'} />
     </html>
   )
 }
