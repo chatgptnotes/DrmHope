@@ -115,12 +115,12 @@ export function HeroSection() {
 
         {/* Right Slider */}
         <div className="relative w-full max-w-xs sm:max-w-sm lg:max-w-none mx-auto lg:mx-0 order-1 lg:order-2 flex items-center justify-center lg:justify-end">
-          <div className="w-full lg:w-[380px] xl:w-[410px]">
+          <div className="w-full lg:w-[430px] xl:w-[480px]">
             {mounted ? <Swiper
               effect="cards"
               grabCursor={true}
               modules={[EffectCards, Autoplay]}
-              className="w-full h-[210px] sm:h-[250px] md:h-[290px] lg:h-[330px] xl:h-[360px]"
+              className="w-full h-[210px] sm:h-[250px] md:h-[300px] lg:h-[380px] xl:h-[430px]"
               autoplay={{
                 delay: 5000,
                 disableOnInteraction: true,
@@ -170,7 +170,7 @@ export function HeroSection() {
                   </div>
                 </SwiperSlide>
               ))}
-            </Swiper> : <div className="w-full h-[210px] sm:h-[250px] md:h-[290px] lg:h-[330px] xl:h-[360px] rounded-2xl bg-white/10 animate-pulse" />}
+            </Swiper> : <div className="w-full h-[210px] sm:h-[250px] md:h-[300px] lg:h-[380px] xl:h-[430px] rounded-2xl bg-white/10 animate-pulse" />}
           </div>
         </div>
       </div>
