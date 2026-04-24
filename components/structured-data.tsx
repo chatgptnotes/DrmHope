@@ -216,7 +216,6 @@ export function StructuredData({ article }: { article?: any } = {}) {
     "image": "https://www.drmhope.com/images/1631365238387.jpeg",
     "@id": "https://www.drmhope.com",
     "url": "https://www.drmhope.com",
-    "telephone": "+91-8412030400",
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",

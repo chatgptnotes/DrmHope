@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { Mail, Phone, MapPin } from "lucide-react"
+import { Mail, MapPin } from "lucide-react"
 
 export function ContactForm() {
   const [name, setName] = useState("")
@@ -204,10 +204,6 @@ export function ContactForm() {
                       Nagpur, Maharashtra, India
                     </p>
                   </div>
-                </div>
-                <div className="flex gap-3 items-center">
-                  <Phone className="h-5 w-5 text-red-600 dark:text-white flex-shrink-0" />
-                  <a href="tel:+918412030400" className="text-sm text-gray-700 dark:text-gray-300 hover:text-red-600">+91 8412030400</a>
                 </div>
                 <div className="flex gap-3 items-center">
                   <Mail className="h-5 w-5 text-red-600 dark:text-white flex-shrink-0" />
